@@ -4,6 +4,13 @@ const userData = require("../testData/userData").registerData;
 const config = require("../../config");
 const mainUrl = config.urls.main;
 
+// randomize email address to make sure the testData is usable over and over again
+const randomCharString = Math.random().toString(36).substr(2, 7);
+const email = userData.email;
+const emailSnippetArray = email.split("-");
+emailSnippetArray.splice(1, 0, randomCharString);
+userData.email = emailSnippetArray.join('');
+
 describe("Test for registration process", () => {
 
 	beforeAll(() => {
