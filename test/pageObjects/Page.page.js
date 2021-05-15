@@ -15,7 +15,15 @@ module.exports = class Page {
 	}
 
 	getHeadlineElem(text) {
-		return this.$(`//*[contains(text(), '${text}')]`);
+		return $(`//*[contains(text(), '${text}')]`);
+	}
+
+	getCartHeadlineElem(text) {
+		return $(`//div[@id='center_column']//*[contains(text(), '${text}')]`);
+	}
+
+	get welcomeHeadline() {
+		return this.getHeadlineElem("Welcome");
 	}
 
 	setInputValue(inputElement, value) {
@@ -23,9 +31,5 @@ module.exports = class Page {
 		const backspacesForClearingInput = new Array(inputLength).fill("Backspace");
 		inputElement.setValue(backspacesForClearingInput);
 		inputElement.setValue(value);
-	}
-
-	get welcomeHeadline() {
-		return this.getHeadlineElem("Welcome");
 	}
 }

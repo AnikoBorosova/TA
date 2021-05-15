@@ -46,7 +46,6 @@ class SignInPage extends Page {
 		this.loginEmailInput.setValue(email);
 		this.passwordInput.setValue(password);
 		this.logInBtn.click();
-		this.welcomeHeadline.waitForDisplayed(shortPause);
 	}
 }
 
