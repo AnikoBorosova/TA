@@ -31,6 +31,15 @@ exports.config = {
     exclude: [
         // 'path/to/excluded/files'
     ],
+    suites: {
+        signInTests: [
+            './test/specs/register.js',
+            './test/specs/login.js'
+        ],
+        purchaseTests: [
+            './test/specs/purchase.js'
+        ]
+    },
     //
     // ============
     // Capabilities
@@ -61,7 +70,10 @@ exports.config = {
         maxInstances: 1,
         //
         browserName: 'chrome',
-        acceptInsecureCerts: true
+        'goog:chromeOptions': {
+            args: ['--headless', '--disable-gpu', '--window-size=1920,1080', '--no-sandbox', '--no-cache']
+        },
+        // acceptInsecureCerts: true
         // If outputDir is provided WebdriverIO can capture driver session logs
         // it is possible to configure which logTypes to include/exclude.
         // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
@@ -98,7 +110,7 @@ exports.config = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
-    baseUrl: 'http://localhost',
+    baseUrl: 'http://automationpractice.com/index.php',
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
@@ -142,7 +154,7 @@ exports.config = {
 
     //
     // Options to be passed to Jasmine.
-    jasmineOpts: {
+    jasmineNodeOpts: {
         // Jasmine default timeout
         defaultTimeoutInterval: 60000,
         //

@@ -7,7 +7,8 @@
 		"test": "test"
 	},
 	"scripts": {
-		"test": "./node_modules/.bin/wdio ./wdio.conf.js"
+		"testLocal": "./node_modules/.bin/wdio ./wdio-local.conf.js",
+		"testRemote": "./node_modules/.bin/wdio ./wdio-remote.conf.js"
 	},
 	"repository": {
 		"type": "git",
