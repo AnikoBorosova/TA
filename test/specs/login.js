@@ -1,11 +1,12 @@
 const SignInPage = require("../pageObjects/SignIn.page");
 const signInPage = new SignInPage();
-const userData = require("../testData/userData");
-const email = userData.loginData.email;
-const password = userData.loginData.password;
 
 const config = require("../../config");
 const mainUrl = config.urls.main;
+
+const userData = require("../testData/userData");
+const email = userData.loginData.email;
+const password = userData.loginData.password;
 
 describe("Test for login process", () => {
 
