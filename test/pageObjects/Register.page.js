@@ -28,14 +28,6 @@ class RegisterPage extends SignInPage {
 		return this.getInput("passwd");
 	}
 
-	get addressFieldFirstnameInput() {
-		return this.getInput("firstname");
-	}
-
-	get addressFieldLastnameInput() {
-		return this.getInput("lastname");
-	}
-
 	get addressInput() {
 		return this.getInput("address1");
 	}
@@ -64,10 +56,6 @@ class RegisterPage extends SignInPage {
 		return $("//button[@id='submitAccount']");
 	}
 
-	get welcomeHeadline() {
-		return this.getHeadlineElem("Welcome");
-	}
-
 	doCreateAccount(email) {
 		this.emailCreateInput.setValue(email);
 		this.createAccountBtn.click();
@@ -79,8 +67,6 @@ class RegisterPage extends SignInPage {
 		this.firstNameInput.setValue(userData.firstName);
 		this.lastNameInput.setValue(userData.lastName);
 		this.passwordInput.setValue(userData.password);
-		this.addressFieldFirstnameInput.setValue(userData.firstName);
-		this.addressFieldLastnameInput.setValue(userData.lastName);
 		this.addressInput.setValue(userData.address);
 		this.cityInput.setValue(userData.city);
 		this.getStateListItem(userData.state).click();

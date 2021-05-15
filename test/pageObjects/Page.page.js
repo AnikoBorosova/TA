@@ -24,4 +24,8 @@ module.exports = class Page {
 		inputElement.setValue(backspacesForClearingInput);
 		inputElement.setValue(value);
 	}
+
+	get welcomeHeadline() {
+		return this.getHeadlineElem("Welcome");
+	}
 }

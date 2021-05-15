@@ -41,6 +41,13 @@ class SignInPage extends Page {
 		this.signInBtn.click();
 		this.createAccountHeadline.waitForDisplayed(shortPause);
 	}
+
+	doLogIn(email, password) {
+		this.loginEmailInput.setValue(email);
+		this.passwordInput.setValue(password);
+		this.logInBtn.click();
+		this.welcomeHeadline.waitForDisplayed(shortPause);
+	}
 }
 
 module.exports = SignInPage;

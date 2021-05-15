@@ -1,5 +1,5 @@
-const userData = require("../testData/userData");
 const registerPage = require("../pageObjects/Register.page");
+const userData = require("../testData/userData").registerData;
 
 const config = require("../../config");
 const mainUrl = config.urls.main;
@@ -16,7 +16,7 @@ describe("Test for registration process", () => {
 		expect(registerPage.createAccountHeadline.isDisplayed()).toBe(true);
 	});
 
-	it("creates account", () => {
+	it("creates account and check if it proceeds to registration form", () => {
 		registerPage.doCreateAccount(userData.email);
 		expect(registerPage.personalInfoHeadline.isDisplayed()).toBe(true);
 	});
