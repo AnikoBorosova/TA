@@ -72,7 +72,7 @@ class RegisterPage extends SignInPage {
 		this.getStateListItem(userData.state).click();
 		this.postalCodeInput.setValue(userData.postalCode);
 		this.mobileInput.setValue(userData.mobilePhone);
-		this.setInputValue(this.aliasInput, userData.addressAlias);
+		this.clearAndSetInputValue(this.aliasInput, userData.addressAlias);
 		this.registerBtn.click();
 		this.welcomeHeadline.waitForDisplayed(shortPause);
 	}

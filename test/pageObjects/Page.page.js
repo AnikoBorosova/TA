@@ -26,7 +26,7 @@ module.exports = class Page {
 		return this.getHeadlineElem("Welcome");
 	}
 
-	setInputValue(inputElement, value) {
+	clearAndSetInputValue(inputElement, value) {
 		const inputLength = inputElement.getValue().length;
 		const backspacesForClearingInput = new Array(inputLength).fill("Backspace");
 		inputElement.setValue(backspacesForClearingInput);
