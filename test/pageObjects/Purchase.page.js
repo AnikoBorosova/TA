@@ -70,7 +70,6 @@ class PurchasePage extends Page {
 
 	doAddItemToCart(price, itemName) {
 		this.getItemAddBtn(price, itemName).waitForExist(shortPause);
-		this.getItemAddBtn(price, itemName).scrollIntoView();
 		browser.execute(clickHelper, this.getItemAddBtn(price, itemName).xPath);
 		this.successHeadline.waitForDisplayed(shortPause);
 	}
