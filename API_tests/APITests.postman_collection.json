@@ -1,0 +1,180 @@
+{
+	"info": {
+		"_postman_id": "293664da-9658-44bf-a410-6b20e97647ba",
+		"name": "T",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET status of main page",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Successful GET request for main page\", function () {",
+							"    pm.expect(pm.response.code).to.equal(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://automationpractice.com/index.php",
+					"protocol": "http",
+					"host": [
+						"automationpractice",
+						"com"
+					],
+					"path": [
+						"index.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST registration data",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Successful POST request with registration data\", function () {",
+							"    pm.expect(pm.response.code).to.equal(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "id_gender: 1\ncustomer_firstname: John\ncustomer_lastname: Smith\nemail: johnsmithrandom%40email.com\npasswd: qwerty\nfirstname: John\nlastname: Smith\naddress1: Main+Street+100\ncity: Denver\nid_state: 1\npostcode: 10000\nid_country: 21\nphone_mobile: 123456789\nalias: johnsmithalias%40gmail.com\nemail_create: 1\nis_new_customer: 1\nback: my-account\nsubmitAccount: \n",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://automationpractice.com/index.php?controller=authentication&back=my-account#account-creation",
+					"protocol": "http",
+					"host": [
+						"automationpractice",
+						"com"
+					],
+					"path": [
+						"index.php"
+					],
+					"query": [
+						{
+							"key": "controller",
+							"value": "authentication"
+						},
+						{
+							"key": "back",
+							"value": "my-account"
+						}
+					],
+					"hash": "account-creation"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST request for login process",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"response body (html) contains a given string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"my personal information\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "email: johndoe@email.com\npasswd: qweRTY10\nback: my-account\nSubmitLogin:",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://automationpractice.com/index.php?controller=authentication&back=my-account",
+					"protocol": "http",
+					"host": [
+						"automationpractice",
+						"com"
+					],
+					"path": [
+						"index.php"
+					],
+					"query": [
+						{
+							"key": "controller",
+							"value": "authentication"
+						},
+						{
+							"key": "back",
+							"value": "my-account"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST request for item in cart",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Successful POST request when adding item to cart\", function () {",
+							"    pm.expect(pm.response.code).to.equal(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "controller: cart\nadd: 1\nqty: 1\nid_product: 4"
+				},
+				"url": {
+					"raw": "http://automationpractice.com/index.php",
+					"protocol": "http",
+					"host": [
+						"automationpractice",
+						"com"
+					],
+					"path": [
+						"index.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
