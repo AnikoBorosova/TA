@@ -19,7 +19,7 @@
 	"homepage": "https://github.com/AnikoBorosova/TA#readme",
 	"devDependencies": {
 		"@wdio/cli": "6.10.0",
-		"@wdio/junit-reporter": "6.3.6",
+		"@wdio/junit-reporter": "7.5.7",
 		"@wdio/jasmine-framework": "6.10.6",
 		"@wdio/local-runner": "6.10.0",
 		"wdio-chromedriver-service": "7.0.0",

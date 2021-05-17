@@ -157,7 +157,7 @@ exports.config = {
 		['junit', {
 			outputDir: './wdioTests/results/',
 			outputFileFormat: function (options) {
-				return 'result.xml';
+				return `results-${options.cid}.xml`;
 			}
 		}]
 	],
