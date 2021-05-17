@@ -155,7 +155,7 @@ exports.config = {
 	// see also: https://webdriver.io/docs/dot-reporter
 	reporters: [
 		['junit', {
-			outputDir: './results/',
+			outputDir: './wdioTests/results/',
 			outputFileFormat: function (options) {
 				return 'result.xml';
 			}
