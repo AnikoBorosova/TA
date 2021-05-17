@@ -25,9 +25,9 @@ exports.config = {
 	// will be called from there.
 	//
 	specs: [
-		'./test/specs/register.js',
-		'./test/specs/login.js',
-		'./test/specs/purchase.js'
+		'./wdioTests/specs/register.js',
+		'./wdioTests/specs/login.js',
+		'./wdioTests/specs/purchase.js'
 	],
 	// Patterns to exclude.
 	exclude: [
@@ -35,11 +35,11 @@ exports.config = {
 	],
 	suites: {
 		signInTests: [
-			'./test/specs/register.js',
-			'./test/specs/login.js'
+			'./wdioTests/specs/register.js',
+			'./wdioTests/specs/login.js'
 		],
 		purchaseTests: [
-			'./test/specs/purchase.js'
+			'./wdioTests/specs/purchase.js'
 		]
 	},
 	//
@@ -77,6 +77,7 @@ exports.config = {
 			args: ['--headless', '--disable-gpu', '--window-size=1920,1080', '--no-sandbox', '--no-cache']
 		},
 		*/
+
 		// acceptInsecureCerts: true
 		// If outputDir is provided WebdriverIO can capture driver session logs
 		// it is possible to configure which logTypes to include/exclude.
@@ -152,8 +153,14 @@ exports.config = {
 	// Test reporter for stdout.
 	// The only one supported by default is 'dot'
 	// see also: https://webdriver.io/docs/dot-reporter
-	reporters: ['spec'],
-
+	reporters: [
+		['junit', {
+			outputDir: './results/',
+			outputFileFormat: function (options) {
+				return 'result.xml';
+			}
+		}]
+	],
 
 
 	//

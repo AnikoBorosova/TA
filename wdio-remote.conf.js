@@ -29,9 +29,9 @@ exports.config = {
 	// will be called from there.
 	//
 	specs: [
-		'./test/specs/register.js',
-		'./test/specs/login.js',
-		'./test/specs/purchase.js'
+		'./wdioTests/specs/register.js',
+		'./wdioTests/specs/login.js',
+		'./wdioTests/specs/purchase.js'
 	],
 	// Patterns to exclude.
 	exclude: [
@@ -39,11 +39,11 @@ exports.config = {
 	],
 	suites: {
 		signInTests: [
-			'./test/specs/register.js',
-			'./test/specs/login.js'
+			'./wdioTests/specs/register.js',
+			'./wdioTests/specs/login.js'
 		],
 		purchaseTests: [
-			'./test/specs/purchase.js'
+			'./wdioTests/specs/purchase.js'
 		]
 	},
 	//
@@ -154,10 +154,14 @@ exports.config = {
 	// Test reporter for stdout.
 	// The only one supported by default is 'dot'
 	// see also: https://webdriver.io/docs/dot-reporter
-	reporters: ['spec'],
-
-
-
+	reporters: [
+		['junit', {
+			outputDir: './results/',
+			outputFileFormat: function (options) {
+				return 'result.xml';
+			}
+		}]
+	],
 	//
 	// Options to be passed to Jasmine.
 	jasmineNodeOpts: {
