@@ -30,7 +30,7 @@ Location of the web tests: ```./API_tests/APITests.postman_collection.json```
 API_tests are usually not placed within the same repository as wdio tests, but for simplicity, I placed them here for this project.
 The execution needs the newman npm package, but I did not want to install it within the package.json of the webdriverio tests for the above reason.
 
-- clone the reporitory
+- clone the repository
 - do ```npm install newman@5.2.2```
 - do ```cd API_tests```
 - start the tests with the command: ```newman run APITests.postman_collection.json```
