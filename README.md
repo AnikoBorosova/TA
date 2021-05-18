@@ -46,7 +46,13 @@ This project is using Jenkins as an automation server.
     - Set the 'Parameter Type' to ```Multi Select```
     - Set the 'Number of Visible Items' and 'Delimiter' as you like
     - Set the 'Value' list based on the ```suites``` array in your ```wdio-remote.conf.js``` file. Here we have only 2 suites (--suite signInTests,--suite purchaseTests), but these can be expanded anytime
+
+https://user-images.githubusercontent.com/26765655/118711242-a49a3a80-b81f-11eb-955b-7e5760ea8fb5.png
+
 - In the 'Source Code Management' section choose the option 'Git', than add the link of the repository and the branch name: ```*/main```
+
+https://user-images.githubusercontent.com/26765655/118711262-a95eee80-b81f-11eb-90d7-339370a05d74.png
+
 - In the 'Build' section choose 'Execute shell' from the options and add these commands to the shell:
 
 ```
