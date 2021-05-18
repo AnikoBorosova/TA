@@ -2,13 +2,17 @@
 ## API tests created with Postman and executed by using newman and JUnit-reporter
 Website being tested: http://automationpractice.com/index.php
 
+---------------------
+
+## How to run the tests locally
+
+### System Requirements:
+
 Browser used: Google Chrome
 
 OS used: Linux/Ubuntu
 
----------------------
-
-## How to run the tests locally
+NodeJS version: ```12.16.1``` or above
 
 ### Web tests
 Location of the web tests: ```./wdioTests/specs/```
