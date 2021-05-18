@@ -1,5 +1,5 @@
 ## Web tests created and executed by using webdriverio, jasmine, chromedriver and JUnit-reporter
-## API tests created with Postman and executed by using newman and JUnit-reporter
+## API tests created with Postman and ChaiJS, and executed by using newman and JUnit-reporter
 Website being tested: http://automationpractice.com/index.php
 
 ---------------------
