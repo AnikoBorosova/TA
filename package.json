@@ -1,10 +1,10 @@
 {
-	"name": "ta",
+	"name": "webdriverio-tests",
 	"version": "1.0.0",
 	"description": "Test automation project",
-	"main": "wdio.conf.js",
+	"main": "wdio-shared.conf.js",
 	"directories": {
-		"test": "test"
+		"tests": "tests"
 	},
 	"scripts": {
 		"testGithub": "./node_modules/.bin/wdio ./wdio-github.conf.js",
@@ -15,11 +15,11 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/AnikoBorosova/TA.git"
+		"url": "https://github.com/AnikoBorosova/Test-Automation.git"
 	},
 	"author": "Anikó Borosová",
 	"license": "ISC",
-	"homepage": "https://github.com/AnikoBorosova/TA#readme",
+	"homepage": "https://github.com/AnikoBorosova/Test-Automation.git#readme",
 	"devDependencies": {
 		"@wdio/allure-reporter": "7.16.11",
 		"@wdio/cli": "7.6.0",
