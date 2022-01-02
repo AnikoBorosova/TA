@@ -63,6 +63,7 @@ module.exports = {
 	// https://docs.saucelabs.com/reference/platforms-configurator
 	//
 	capabilities: [
+		/*
 		{
 			// maxInstances can get overwritten per capability. So if you have an in-house Selenium
 			// grid with only 5 firefox instances available you can make sure that not more than
@@ -81,7 +82,12 @@ module.exports = {
 				//flag to activate Firefox headless mode (see https://github.com/mozilla/geckodriver/blob/master/README.md#firefox-capabilities for more details about moz:firefoxOptions)
 				args: ['-headless']
 			}
-		}
+		},
+		*/
+		{
+			maxInstances: 3,
+			browserName: 'MicrosoftEdge',
+		},
 	],
 	// execArgv: ['--inspect'],
 	//
