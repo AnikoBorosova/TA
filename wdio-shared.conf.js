@@ -56,7 +56,7 @@ module.exports = {
 	// and 30 processes will get spawned. The property handles how many capabilities
 	// from the same test should run tests.
 	//
-	maxInstances: 2,
+	maxInstances: 6,
 	//
 	// If you have trouble getting all important capabilities together, check out the
 	// Sauce Labs platform configurator - a great tool to configure your capabilities:
@@ -75,6 +75,7 @@ module.exports = {
 			}
 		},
 		{
+			maxInstances: 3,
 			browserName: 'firefox',
 			"moz:firefoxOptions": {
 				//flag to activate Firefox headless mode (see https://github.com/mozilla/geckodriver/blob/master/README.md#firefox-capabilities for more details about moz:firefoxOptions)
