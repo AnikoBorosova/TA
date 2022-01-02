@@ -7,9 +7,11 @@
 		"test": "test"
 	},
 	"scripts": {
-		"testLocal": "./node_modules/.bin/wdio ./wdio-local.conf.js",
 		"testGithub": "./node_modules/.bin/wdio ./wdio-github.conf.js",
-		"testJenkins": "./node_modules/.bin/wdio ./wdio-jenkins.conf.js"
+		"testJenkins": "./node_modules/.bin/wdio ./wdio-jenkins.conf.js",
+		"testLocal": "node prepareConfig.js ./node_modules/.bin/wdio ./wdio-local.conf.js",
+		"testLocalSignIn": "node prepareConfig.js ./node_modules/.bin/wdio ./wdio-local.conf.js --suite signInTests",
+		"testLocalPurchase": "node prepareConfig.js ./node_modules/.bin/wdio ./wdio-local.conf.js --suite purchaseTests"
 	},
 	"repository": {
 		"type": "git",
