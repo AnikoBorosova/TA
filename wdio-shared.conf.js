@@ -56,23 +56,32 @@ module.exports = {
 	// and 30 processes will get spawned. The property handles how many capabilities
 	// from the same test should run tests.
 	//
-	maxInstances: 1,
+	maxInstances: 2,
 	//
 	// If you have trouble getting all important capabilities together, check out the
 	// Sauce Labs platform configurator - a great tool to configure your capabilities:
 	// https://docs.saucelabs.com/reference/platforms-configurator
 	//
-	capabilities: [{
-		// maxInstances can get overwritten per capability. So if you have an in-house Selenium
-		// grid with only 5 firefox instances available you can make sure that not more than
-		// 5 instances get started at a time.
-		maxInstances: 1,
-		//
-		browserName: 'chrome',
-		'goog:chromeOptions': {
-			args: ['--start-maximized', '--headless', '--disable-gpu', '--window-size=1920,1080', '--no-sandbox', '--no-cache']
+	capabilities: [
+		{
+			// maxInstances can get overwritten per capability. So if you have an in-house Selenium
+			// grid with only 5 firefox instances available you can make sure that not more than
+			// 5 instances get started at a time.
+			maxInstances: 3,
+			//
+			browserName: 'chrome',
+			'goog:chromeOptions': {
+				args: ['--start-maximized', '--headless', '--disable-gpu', '--window-size=1920,1080', '--no-sandbox', '--no-cache']
+			}
+		},
+		{
+			browserName: 'firefox',
+			"moz:firefoxOptions": {
+				//flag to activate Firefox headless mode (see https://github.com/mozilla/geckodriver/blob/master/README.md#firefox-capabilities for more details about moz:firefoxOptions)
+				args: ['-headless']
+			}
 		}
-	}],
+	],
 	// execArgv: ['--inspect'],
 	//
 	// ===================

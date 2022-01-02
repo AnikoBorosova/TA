@@ -1,4 +1,4 @@
-name: Manual workflow for automated tests windows10
+name: Manual workflow for automated tests on windows10
 
 on:
   workflow_dispatch:
