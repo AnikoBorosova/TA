@@ -1,0 +1,37 @@
+name: Manual workflow for automated tests on windows10
+
+on:
+  workflow_dispatch:
+    inputs:
+      suites:
+        description: 'Test suites'
+        required: false
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+            node-version: 14.17.0
+      - name: Setup
+        run: npm install
+      - name: Test (when added suite flag)
+        shell: bash
+        env:
+          SUITES: ${{ github.event.inputs.suites }}
+        if: ${{ github.event.inputs.suites != null || '' }}
+        run: node prepareConfig.js && ./node_modules/.bin/wdio ./wdio-github-macOS.conf.js --suite "$SUITES"
+      - name: Test (when no suite flag)
+        shell: bash
+        env:
+          SUITES: ${{ github.event.inputs.suites }}
+        if: ${{ github.event.inputs.suites == null || '' }}
+        run: node prepareConfig.js && ./node_modules/.bin/wdio ./wdio-github-macOS.conf.js
+      - name: Screenshot handling
+        uses: actions/upload-artifact@v1
+        if: failure()
+        with:
+          name: wdio-error-screenshots
+          path: errorScreenshots
