@@ -1,4 +1,4 @@
-name: Scheduled workflow for automated tests on windows10
+name: windows10 - Scheduled workflow for automated tests on windows10
 
 on:
   schedule:

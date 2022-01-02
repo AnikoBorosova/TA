@@ -1,4 +1,4 @@
-name: Scheduled workflow for automated tests on ubuntu-latest
+name: ubuntu - Scheduled workflow for automated tests on ubuntu-latest
 
 on:
   schedule:
