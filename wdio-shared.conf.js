@@ -63,7 +63,6 @@ module.exports = {
 	// https://docs.saucelabs.com/reference/platforms-configurator
 	//
 	capabilities: [
-		/*
 		{
 			// maxInstances can get overwritten per capability. So if you have an in-house Selenium
 			// grid with only 5 firefox instances available you can make sure that not more than
@@ -83,7 +82,6 @@ module.exports = {
 				args: ['-headless']
 			}
 		},
-		*/
 		{
 			maxInstances: 3,
 			browserName: 'MicrosoftEdge',
