@@ -8,7 +8,8 @@
 	},
 	"scripts": {
 		"testLocal": "./node_modules/.bin/wdio ./wdio-local.conf.js",
-		"testRemote": "./node_modules/.bin/wdio ./wdio-remote.conf.js"
+		"testGithub": "./node_modules/.bin/wdio ./wdio-github.conf.js",
+		"testJenkins": "./node_modules/.bin/wdio ./wdio-jenkins.conf.js"
 	},
 	"repository": {
 		"type": "git",

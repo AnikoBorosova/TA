@@ -1,0 +1,29 @@
+name: Scheduled workflow for automated tests on ubuntu-latest
+
+on:
+  schedule:
+  - cron: "0 7 * * 1"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+            node-version: 14.17.0
+      - name: Setup
+        run: npm install
+      - name: Test
+        shell: bash
+        env:
+          USER_NAME: ${{ secrets.USER_NAME }}
+          USER_PASSWORD: ${{ secrets.USER_PASSWORD }}
+        run: node prepareConfig.js --envSecretUser "$USER_NAME" --envSecretPwd "$USER_PASSWORD" && ./node_modules/.bin/wdio ./wdio-github.conf.js
+      - name: Screenshot handling
+        uses: actions/upload-artifact@v1
+        if: failure()
+        with:
+          name: wdio-error-screenshots
+          path: errorScreenshots
