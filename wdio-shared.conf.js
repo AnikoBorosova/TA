@@ -1,4 +1,4 @@
-const saveScreenshotHelper = require("../utils/saveScreenshotHelper");
+const saveScreenshotHelper = require("./utils/saveScreenshotHelper");
 
 module.exports = {
 	//
@@ -23,9 +23,9 @@ module.exports = {
 	// directory is where your package.json resides, so `wdio` will be called from there.
 	//
 	specs: [
-		'./wdioTests/specs/register.js',
-		'./wdioTests/specs/login.js',
-		'./wdioTests/specs/purchase.js'
+		'./tests/specs/register.js',
+		'./tests/specs/login.js',
+		'./tests/specs/purchase.js'
 	],
 	// Patterns to exclude.
 	exclude: [
@@ -33,11 +33,11 @@ module.exports = {
 	],
 	suites: {
 		signInTests: [
-			'./wdioTests/specs/register.js',
-			'./wdioTests/specs/login.js'
+			'./tests/specs/register.js',
+			'./tests/specs/login.js'
 		],
 		purchaseTests: [
-			'./wdioTests/specs/purchase.js'
+			'./tests/specs/purchase.js'
 		]
 	},
 	//

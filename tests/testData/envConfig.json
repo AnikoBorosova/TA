@@ -1,6 +1,6 @@
 {
 	"urls": {
-		"main": "http://automationpractice.com/index.php",
+		"homePage": "http://automationpractice.com/index.php",
 		"signIn": "http://automationpractice.com/index.php?controller=authentication&back=my-account",
 		"register": "http://automationpractice.com/index.php?controller=authentication&back=my-account#account-creation"
 	},
