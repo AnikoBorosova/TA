@@ -1,6 +1,6 @@
 const Page = require("./Page.page");
-const config = require("../../config");
-const shortPause = config.pauses.short;
+const envConfig = require("../../configs/envConfig");
+const shortPause = envConfig.pauses.short;
 
 class SignInPage extends Page {
 

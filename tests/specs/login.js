@@ -1,18 +1,17 @@
 const SignInPage = require("../pageObjects/SignIn.page");
 const signInPage = new SignInPage();
 
-const config = require("../../config");
-const mainUrl = config.urls.main;
+const envConfig = require("../../configs/envConfig");
+const homePageUrl = envConfig.urls.homePage;
 
-const userData = require("../testData/userData");
+const userData = require("../../configs/testData");
 const email = userData.loginData.email;
 const password = userData.loginData.password;
 
 describe("Test for login process", () => {
 
 	beforeAll(() => {
-		browser.url(mainUrl);
-		browser.maximizeWindow();
+		browser.url(homePageUrl);
 	});
 
 	it("navigate to 'Sign in'page and check if it displays", () => {

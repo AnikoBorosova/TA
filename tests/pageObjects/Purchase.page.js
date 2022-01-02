@@ -3,8 +3,8 @@ const SignInPage = require("../pageObjects/SignIn.page");
 const signInPage = new SignInPage();
 const clickHelper = require("../../utils/clickHelper");
 
-const config = require("../../config");
-const shortPause = config.pauses.short;
+const envConfig = require("../../configs/envConfig");
+const shortPause = envConfig.pauses.short;
 
 class PurchasePage extends Page {
 

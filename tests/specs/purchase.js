@@ -1,9 +1,9 @@
 const purchasePage = require("../pageObjects/Purchase.page");
 
-const config = require("../../config");
-const mainUrl = config.urls.main;
+const envConfig = require("../../configs/envConfig");
+const homePageUrl = envConfig.urls.homePage;
 
-const userData = require("../testData/userData");
+const userData = require("../../configs/testData");
 const price = userData.purchaseData.price;
 const itemName = userData.purchaseData.itemName;
 const email = userData.loginData.email;
@@ -12,8 +12,7 @@ const password = userData.loginData.password;
 describe("Test for basic item purchase process", () => {
 
 	beforeAll(() => {
-		browser.url(mainUrl);
-		browser.maximizeWindow();
+		browser.url(homePageUrl);
 	});
 
 	it("adds an item to the cart and checks if it was successful", () => {

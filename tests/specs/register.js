@@ -1,9 +1,9 @@
 const registerPage = require("../pageObjects/Register.page");
-const userData = require("../testData/userData").registerData;
-const randomizeEmailAddress = require("../../utils/randomizeEmailAddress");
+const envConfig = require("../../configs/envConfig");
+const homePageUrl = envConfig.urls.homePage;
 
-const config = require("../../config");
-const mainUrl = config.urls.main;
+const userData = require("../../configs/testData").registerData;
+const randomizeEmailAddress = require("../../utils/randomizeEmailAddress");
 
 // randomize email address to make sure the testData is usable over and over again
 userData.email = randomizeEmailAddress(userData.email);
@@ -11,8 +11,7 @@ userData.email = randomizeEmailAddress(userData.email);
 describe("Test for registration process", () => {
 
 	beforeAll(() => {
-		browser.url(mainUrl);
-		browser.maximizeWindow();
+		browser.url(homePageUrl);
 	});
 
 	it("navigate to 'Sign in'page and check if it displays", () => {
