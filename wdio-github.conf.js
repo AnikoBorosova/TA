@@ -28,6 +28,10 @@ exports.config = {
 			{
 				maxInstances: 3,
 				browserName: 'MicrosoftEdge',
+				//browserName: 'edge',
+				'ms:edgeOptions': {
+					args: ['--start-maximized', '--headless']
+				},
 			},
 		],
 		services: [
