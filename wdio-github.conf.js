@@ -3,6 +3,12 @@ const sharedConfig = require("./wdio-shared.conf");
 const drivers = {
 	chrome: {
 		version: 'latest'
+	},
+	firefox: {
+		version: 'latest'
+	},
+	edge: {
+		version: 'latest'
 	}
 }
 
@@ -27,8 +33,9 @@ exports.config = {
 			},
 			{
 				maxInstances: 3,
-				browserName: 'MicrosoftEdge',
-				//browserName: 'edge',
+				//browserName: 'MicrosoftEdge',
+				browserName: 'edge',
+				browserVersion: 'latest',
 				'ms:edgeOptions': {
 					args: ['--start-maximized', '--headless']
 				},

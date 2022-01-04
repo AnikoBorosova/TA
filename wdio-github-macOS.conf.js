@@ -13,7 +13,14 @@ exports.config = {
 			{
 				maxInstances: 3,
 				browserName: 'safari'
-			}
+			},
+			{
+				maxInstances: 3,
+				browserName: 'chrome',
+				'goog:chromeOptions': {
+					args: ['--start-maximized', '--headless', '--disable-gpu', '--window-size=1920,1080', '--no-sandbox', '--no-cache']
+				}
+			},
 		],
 		services: [
 			['selenium-standalone', {
