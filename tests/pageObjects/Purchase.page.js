@@ -88,6 +88,7 @@ class PurchasePage extends Page {
 		this.proceedBtnAtSummary.click();
 		this.authenticationHeadline.waitForExist({ timeout: shortPause });
 		signInPage.doLogIn(email, password);
+		this.addressesHeadline.waitForExist({ timeout: shortPause });
 	}
 
 	doProceedToShipping() {
