@@ -74,7 +74,7 @@ class RegisterPage extends SignInPage {
 		this.mobileInput.setValue(userData.mobilePhone);
 		this.clearAndSetInputValue(this.aliasInput, userData.addressAlias);
 		this.registerBtn.click();
-		this.accountHeadline.waitForDisplayed({ timeout: shortPause });
+		this.accountHeadline.waitForExist({ timeout: shortPause });
 	}
 }
 

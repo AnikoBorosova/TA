@@ -11,7 +11,7 @@ const password = userData.loginData.password;
 const unregisteredEmail = userData.unregisteredData.email;
 const unregisteredPassword = userData.unregisteredData.password;
 
-const loginErrorMessage = userData.errorMessage.authentication;
+const loginErrorMessage = userData.errorMessage.authenticationFailed;
 const emptyInputErrorMessage = userData.errorMessage.emptyInput;
 
 describe("Test for login process", () => {
