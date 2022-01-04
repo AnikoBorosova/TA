@@ -12,6 +12,7 @@ const unregisteredEmail = userData.unregisteredData.email;
 const unregisteredPassword = userData.unregisteredData.password;
 
 const loginErrorMessage = userData.errorMessage.authentication;
+const emptyInputErrorMessage = userData.errorMessage.emptyInput;
 
 describe("Test for login process", () => {
 
@@ -19,12 +20,20 @@ describe("Test for login process", () => {
 		browser.url(homePageUrl);
 	});
 
-	describe("unsuccessful login - incorrect email address", () => {
+	describe("unsuccessful login - no data", () => {
 
-		it("navigate to 'Sign in'page and check if it opens", () => {
+		it("navigates to 'Sign in'page and checks if it opens", () => {
 			signInPage.doOpenSignInPage();
 			expect(signInPage.createAccountBtn.isExisting()).toBe(true);
 		});
+
+		it("doesn't add any data and validates that the login was unsuccessful", () => {
+			signInPage.logInBtn.click();
+			expect(signInPage.getErrorMessageElem(emptyInputErrorMessage).isExisting()).toBe(true);
+		});
+	});
+
+	describe("unsuccessful login - incorrect email address", () => {
 
 		it("adds incorrect data (email) and validates that the login was unsuccessful", () => {
 			signInPage.doLogIn(unregisteredEmail, password);

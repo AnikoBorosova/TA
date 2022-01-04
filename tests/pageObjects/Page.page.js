@@ -1,3 +1,6 @@
+const envConfig = require("../../configs/envConfig");
+const shortPause = envConfig.pauses.short;
+
 module.exports = class Page {
 
 	$(xPath) {
@@ -19,7 +22,9 @@ module.exports = class Page {
 	}
 
 	getErrorMessageElem(errorMessage) {
-		return this.$(`//*[contains(@class, 'alert-danger')]//li[contains(text(), '${errorMessage}')]`);
+		const messageElem = $(`//*[contains(@class, 'alert-danger')]//li[contains(text(), '${errorMessage}')]`);
+		messageElem.waitForExist({ timeout: shortPause });
+		return messageElem;
 	}
 
 	get accountHeadline() {
