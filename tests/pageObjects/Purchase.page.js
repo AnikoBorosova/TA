@@ -20,8 +20,12 @@ class PurchasePage extends Page {
 		return $("//*[contains(@class, 'button-container')]//a[contains(@title, 'Proceed to checkout')]")
 	}
 
+	getCartStepElem(text) {
+		return $(`//li[contains(@class, 'step_current')]//*[contains(text(), '${text}')]`);
+	}
+
 	get shoppingCartSummaryHeadline() {
-		return this.getCartHeadlineElem("Shopping-cart summary");
+		return this.getCartStepElem("Summary");
 	}
 
 	getItemInShoppingCart(itemName) {
@@ -33,15 +37,15 @@ class PurchasePage extends Page {
 	}
 
 	get authenticationHeadline() {
-		return this.getCartHeadlineElem("Authentication");
+		return this.getCartStepElem("Sign in");
 	}
 
 	get addressesHeadline() {
-		return this.getCartHeadlineElem("Addresses");
+		return this.getCartStepElem("Address");
 	}
 
 	get shippingHeadline() {
-		return this.getCartHeadlineElem("Shipping");
+		return this.getCartStepElem("Shipping");
 	}
 
 	get termsOfServiceCheckbox() {
@@ -57,7 +61,7 @@ class PurchasePage extends Page {
 	}
 
 	get orderSummaryHeadline() {
-		return this.getElemByText("Order summary");
+		return this.getElemByText("Payment");
 	}
 
 	get confirmOrderBtn() {
@@ -65,7 +69,7 @@ class PurchasePage extends Page {
 	}
 
 	get orderConfirmationHeadline() {
-		return this.getCartHeadlineElem("Order confirmation");
+		return this.getElemByText("Order confirmation");
 	}
 
 	doAddItemToCart(price, itemName) {
@@ -75,19 +79,20 @@ class PurchasePage extends Page {
 	}
 
 	doProceedToCartSummary() {
+		this.proceedBtnOnModal.waitForClickable({ timeout: shortPause });
 		this.proceedBtnOnModal.click();
-		this.shoppingCartSummaryHeadline.waitForDisplayed({ timeout: shortPause });
+		this.shoppingCartSummaryHeadline.waitForExist({ timeout: shortPause });
 	}
 
 	doProceedToSignIn(email, password) {
 		this.proceedBtnAtSummary.click();
-		this.authenticationHeadline.waitForDisplayed({ timeout: shortPause });
+		this.authenticationHeadline.waitForExist({ timeout: shortPause });
 		signInPage.doLogIn(email, password);
 	}
 
 	doProceedToShipping() {
 		this.proceedBtn.click();
-		this.shippingHeadline.waitForDisplayed({ timeout: shortPause });
+		this.shippingHeadline.waitForExist({ timeout: shortPause });
 	}
 
 	doProceedToPayment() {
@@ -98,12 +103,12 @@ class PurchasePage extends Page {
 
 	doChoosePaymentMethod(paymentBtn) {
 		paymentBtn.click();
-		this.orderSummaryHeadline.waitForDisplayed({ timeout: shortPause });
+		this.orderSummaryHeadline.waitForExist({ timeout: shortPause });
 	}
 
 	doConfirmOrder() {
 		this.confirmOrderBtn.click();
-		this.orderConfirmationHeadline.waitForDisplayed({ timeout: shortPause });
+		this.orderConfirmationHeadline.waitForExist({ timeout: shortPause });
 	}
 }
 

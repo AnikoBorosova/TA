@@ -34,9 +34,7 @@ module.exports = class Page {
 
 
 
-	getCartHeadlineElem(text) {
-		return $(`//div[@id='center_column']//*[contains(text(), '${text}')]`);
-	}
+	
 
 	clearAndSetInputValue(inputElement, value) {
 		const inputLength = inputElement.getValue().length;

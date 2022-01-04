@@ -27,22 +27,22 @@ describe("Test for basic item purchase process", () => {
 
 	it("Logs in with credentials and proceeds to 'Addresses' page", () => {
 		purchasePage.doProceedToSignIn(email, password);
-		expect(purchasePage.addressesHeadline.isDisplayed()).toBe(true);
+		expect(purchasePage.addressesHeadline.isExisting()).toBe(true);
 	});
 
 	it("proceeds to 'Shipping' page and checks page headline", () => {
 		purchasePage.doProceedToShipping();
-		expect(purchasePage.shippingHeadline.isDisplayed()).toBe(true);
+		expect(purchasePage.shippingHeadline.isExisting()).toBe(true);
 	});
 
 	it("proceeds to payment, chooses payment method and proceeds to 'Order summary' page", () => {
 		purchasePage.doProceedToPayment();
 		purchasePage.doChoosePaymentMethod(purchasePage.bankWirePaymentBtn);
-		expect(purchasePage.orderSummaryHeadline.isDisplayed()).toBe(true);
+		expect(purchasePage.orderSummaryHeadline.isExisting()).toBe(true);
 	});
 
 	it("confirms order and checks 'Confirmation' page headline", () => {
 		purchasePage.doConfirmOrder();
-		expect(purchasePage.orderConfirmationHeadline.isDisplayed()).toBe(true);
+		expect(purchasePage.orderConfirmationHeadline.isExisting()).toBe(true);
 	});
 });
