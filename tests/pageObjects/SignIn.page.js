@@ -5,23 +5,15 @@ const shortPause = envConfig.pauses.short;
 class SignInPage extends Page {
 
 	get signInBtn() {
-		return $("//a[contains(text(), 'Sign in')]");
+		return this.getElemByText("Sign in");
 	}
 
-	get createAccountHeadline() {
-		return this.getHeadlineElem("Create an account");
-	}
-
-	get emailCreateInput() {
+	get registerEmailInput() {
 		return this.getInput("email_create");
 	}
 
 	get createAccountBtn() {
 		return this.getBtn("SubmitCreate");
-	}
-
-	get loginHeadline() {
-		return this.getHeadlineElem("Already registered");
 	}
 
 	get loginEmailInput() {
@@ -37,15 +29,16 @@ class SignInPage extends Page {
 	}
 
 	doOpenSignInPage() {
-		this.signInBtn.waitForExist(shortPause);
+		this.signInBtn.waitForExist({ timeout: shortPause });
 		this.signInBtn.click();
-		this.createAccountHeadline.waitForDisplayed(shortPause);
+		this.logInBtn.waitForDisplayed({ timeout: shortPause });;
 	}
 
 	doLogIn(email, password) {
 		this.loginEmailInput.setValue(email);
 		this.passwordInput.setValue(password);
 		this.logInBtn.click();
+		this.accountHeadline.waitForExist({ timeout: shortPause })
 	}
 }
 

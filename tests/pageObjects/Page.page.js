@@ -14,16 +14,23 @@ module.exports = class Page {
 		return this.$(`//button[@id='${id}']`);
 	}
 
-	getHeadlineElem(text) {
-		return $(`//*[contains(text(), '${text}')]`);
+	getElemByText(text) {
+		return this.$(`//*[contains(text(), '${text}')]`);
 	}
+
+	getErrorMessageElem(errorMessage) {
+		return this.$(`//*[contains(@class, 'alert-danger')]//li[contains(text(), '${errorMessage}')]`);
+	}
+
+	get accountHeadline() {
+		return this.getElemByText("My account");
+	}
+
+
+
 
 	getCartHeadlineElem(text) {
 		return $(`//div[@id='center_column']//*[contains(text(), '${text}')]`);
-	}
-
-	get welcomeHeadline() {
-		return this.getHeadlineElem("Welcome");
 	}
 
 	clearAndSetInputValue(inputElement, value) {

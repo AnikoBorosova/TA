@@ -26,6 +26,6 @@ describe("Test for registration process", () => {
 
 	it("adds correct registration data and validates that the process was successful", () => {
 		registerPage.setRegistrationData(userData);
-		expect(registerPage.welcomeHeadline.isDisplayed()).toBe(true);
+		expect(registerPage.accountHeadline.isDisplayed()).toBe(true);
 	});
 });

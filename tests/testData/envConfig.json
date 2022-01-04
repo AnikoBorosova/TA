@@ -6,7 +6,7 @@
 	},
 	"pauses": {
 		"micro": 500,
-		"short": 1000,
+		"short": 5000,
 		"long": 15000
 	}
 }

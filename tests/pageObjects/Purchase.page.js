@@ -57,7 +57,7 @@ class PurchasePage extends Page {
 	}
 
 	get orderSummaryHeadline() {
-		return this.getHeadlineElem("Order summary");
+		return this.getElemByText("Order summary");
 	}
 
 	get confirmOrderBtn() {
@@ -69,41 +69,41 @@ class PurchasePage extends Page {
 	}
 
 	doAddItemToCart(price, itemName) {
-		this.getItemAddBtn(price, itemName).waitForExist(shortPause);
+		this.getItemAddBtn(price, itemName).waitForExist({ timeout: shortPause });
 		browser.execute(clickHelper, this.getItemAddBtn(price, itemName).xPath);
-		this.successHeadline.waitForDisplayed(shortPause);
+		this.successHeadline.waitForDisplayed({ timeout: shortPause });;
 	}
 
 	doProceedToCartSummary() {
 		this.proceedBtnOnModal.click();
-		this.shoppingCartSummaryHeadline.waitForDisplayed(shortPause);
+		this.shoppingCartSummaryHeadline.waitForDisplayed({ timeout: shortPause });;
 	}
 
 	doProceedToSignIn(email, password) {
 		this.proceedBtnAtSummary.click();
-		this.authenticationHeadline.waitForDisplayed(shortPause);
+		this.authenticationHeadline.waitForDisplayed({ timeout: shortPause });;
 		signInPage.doLogIn(email, password);
 	}
 
 	doProceedToShipping() {
 		this.proceedBtn.click();
-		this.shippingHeadline.waitForDisplayed(shortPause);
+		this.shippingHeadline.waitForDisplayed({ timeout: shortPause });;
 	}
 
 	doProceedToPayment() {
 		this.termsOfServiceCheckbox.click();
 		this.proceedBtn.click();
-		this.bankWirePaymentBtn.waitForClickable(shortPause);
+		this.bankWirePaymentBtn.waitForClickable({ timeout: shortPause });;
 	}
 
 	doChoosePaymentMethod(paymentBtn) {
 		paymentBtn.click();
-		this.orderSummaryHeadline.waitForDisplayed(shortPause);
+		this.orderSummaryHeadline.waitForDisplayed({ timeout: shortPause });;
 	}
 
 	doConfirmOrder() {
 		this.confirmOrderBtn.click();
-		this.orderConfirmationHeadline.waitForDisplayed(shortPause);
+		this.orderConfirmationHeadline.waitForDisplayed({ timeout: shortPause });;
 	}
 }
 

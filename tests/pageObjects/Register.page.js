@@ -5,7 +5,7 @@ const shortPause = envConfig.pauses.short;
 class RegisterPage extends SignInPage {
 
 	get personalInfoHeadline() {
-		return this.getHeadlineElem("Your personal information");
+		return this.getElemByText("Your personal information");
 	}
 
 	get titleInputMale() {
@@ -57,9 +57,9 @@ class RegisterPage extends SignInPage {
 	}
 
 	doCreateAccount(email) {
-		this.emailCreateInput.setValue(email);
+		this.registerEmailInput.setValue(email);
 		this.createAccountBtn.click();
-		this.firstNameInput.waitForExist(shortPause);
+		this.firstNameInput.waitForExist({ timeout: shortPause });
 	}
 
 	setRegistrationData(userData) {
@@ -74,7 +74,7 @@ class RegisterPage extends SignInPage {
 		this.mobileInput.setValue(userData.mobilePhone);
 		this.clearAndSetInputValue(this.aliasInput, userData.addressAlias);
 		this.registerBtn.click();
-		this.welcomeHeadline.waitForDisplayed(shortPause);
+		this.accountHeadline.waitForDisplayed({ timeout: shortPause });;
 	}
 }
 

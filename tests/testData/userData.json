@@ -17,8 +17,15 @@
 		"email": "johndoe@email.com",
 		"password": "qweRTY10"
 	},
+	"unregisteredData": {
+		"email": "notRegistered012@email.com",
+		"password": "owiet9854tu"
+	},
 	"purchaseData": {
 		"itemName": "Blouse",
 		"price": 27
+	},
+	"errorMessage": {
+		"authentication": "Authentication failed."
 	}
 }
