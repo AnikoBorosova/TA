@@ -14,18 +14,20 @@ describe("Test for registration process", () => {
 		browser.url(homePageUrl);
 	});
 
-	it("navigate to 'Sign in'page and check if it displays", () => {
-		registerPage.doOpenSignInPage();
-		expect(registerPage.createAccountHeadline.isDisplayed()).toBe(true);
-	});
+	describe("successful registration", () => {
+		it("navigates to 'Sign in'page and checks if it opens", () => {
+			registerPage.doOpenSignInPage();
+			expect(registerPage.createAccountBtn.isExisting()).toBe(true);
+		});
 
-	it("creates account and check if it proceeds to registration form", () => {
-		registerPage.doCreateAccount(userData.email);
-		expect(registerPage.personalInfoHeadline.isDisplayed()).toBe(true);
-	});
+		it("creates account and check if it proceeds to registration form", () => {
+			registerPage.doCreateAccount(userData.email);
+			expect(registerPage.personalInfoHeadline.isDisplayed()).toBe(true);
+		});
 
-	it("adds correct registration data and validates that the process was successful", () => {
-		registerPage.setRegistrationData(userData);
-		expect(registerPage.accountHeadline.isDisplayed()).toBe(true);
+		it("adds correct registration data and validates that the registration was successful", () => {
+			registerPage.setRegistrationData(userData);
+			expect(registerPage.accountHeadline.isExisting()).toBe(true);
+		});
 	});
 });

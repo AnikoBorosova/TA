@@ -37,7 +37,7 @@ class RegisterPage extends SignInPage {
 	}
 
 	getStateListItem(state) {
-		return $(`//select[@id='id_state']//option[contains(text(), '${state}')]`)
+		return $(`//select[@id='id_state']//option[contains(text(), '${state}')]`);
 	}
 
 	get postalCodeInput() {
@@ -53,7 +53,7 @@ class RegisterPage extends SignInPage {
 	}
 
 	get registerBtn() {
-		return $("//button[@id='submitAccount']");
+		return this.getBtn("submitAccount");
 	}
 
 	doCreateAccount(email) {
@@ -74,7 +74,7 @@ class RegisterPage extends SignInPage {
 		this.mobileInput.setValue(userData.mobilePhone);
 		this.clearAndSetInputValue(this.aliasInput, userData.addressAlias);
 		this.registerBtn.click();
-		this.accountHeadline.waitForDisplayed({ timeout: shortPause });;
+		this.accountHeadline.waitForDisplayed({ timeout: shortPause });
 	}
 }
 

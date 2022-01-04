@@ -31,14 +31,14 @@ class SignInPage extends Page {
 	doOpenSignInPage() {
 		this.signInBtn.waitForExist({ timeout: shortPause });
 		this.signInBtn.click();
-		this.logInBtn.waitForDisplayed({ timeout: shortPause });;
+		this.logInBtn.waitForDisplayed({ timeout: shortPause });
 	}
 
 	doLogIn(email, password) {
 		this.loginEmailInput.setValue(email);
 		this.passwordInput.setValue(password);
 		this.logInBtn.click();
-		this.accountHeadline.waitForExist({ timeout: shortPause })
+		this.accountHeadline.waitForExist({ timeout: shortPause });
 	}
 }
 
