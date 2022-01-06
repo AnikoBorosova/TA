@@ -1,11 +1,9 @@
 name: macOS - Scheduled workflow for automated tests on macOS
 
 on:
-  workflow_dispatch:
-    inputs:
-      suites:
-        description: 'Test suites'
-        required: false
+  schedule:
+  - cron: "0 8 * * 1"
+
 jobs:
   build:
     runs-on: macos-latest
@@ -17,17 +15,8 @@ jobs:
             node-version: 14.17.0
       - name: Setup
         run: npm install
-      - name: Test (when added suite flag)
+      - name: Test
         shell: bash
-        env:
-          SUITES: ${{ github.event.inputs.suites }}
-        if: ${{ github.event.inputs.suites != null || '' }}
-        run: node prepareConfig.js && ./node_modules/.bin/wdio ./wdio-github-macOS.conf.js --suite "$SUITES"
-      - name: Test (when no suite flag)
-        shell: bash
-        env:
-          SUITES: ${{ github.event.inputs.suites }}
-        if: ${{ github.event.inputs.suites == null || '' }}
         run: node prepareConfig.js && ./node_modules/.bin/wdio ./wdio-github-macOS.conf.js
       - name: Screenshot handling
         uses: actions/upload-artifact@v1
