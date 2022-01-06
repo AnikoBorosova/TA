@@ -1,7 +1,6 @@
 const sharedConfig = require("./wdio-shared.conf");
 
 const drivers = {
-	/*
 	chrome: {
 		version: '96.0.4664.45',
 		arch: process.arch,
@@ -10,7 +9,6 @@ const drivers = {
 	firefox: {
 		version: 'latest'
 	},
-	*/
 	chromiumedge: {
 		version: 'latest',
 		arch: process.arch,
@@ -26,7 +24,6 @@ exports.config = {
 	...sharedConfig,
 	...{
 		capabilities: [
-			/*
 			{
 				maxInstances: 3,
 				browserName: 'chrome',
@@ -41,7 +38,6 @@ exports.config = {
 					args: ['-headless']
 				}
 			},
-			*/
 			{
 				maxInstances: 3,
 				browserName: 'MicrosoftEdge',
@@ -50,11 +46,10 @@ exports.config = {
 				},
 			},
 			{
-				browserName: 'operablink',
+				browserName: 'opera',
 				'goog:chromeOptions': {
 					args: [],
 					extensions: []
-					//binary: <path_to_opera>
 				}
 			}
 		],
