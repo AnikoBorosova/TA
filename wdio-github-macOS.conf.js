@@ -5,7 +5,7 @@ const drivers = {
 		version: '96.0.4664.45',
 		arch: process.arch,
 		baseURL: 'https://chromedriver.storage.googleapis.com'
-	},
+	}
 }
 
 exports.config = {
@@ -15,10 +15,6 @@ exports.config = {
 			{
 				maxInstances: 3,
 				browserName: 'safari'
-			},
-			{
-				maxInstances: 3,
-				browserName: 'opera'
 			},
 			{
 				maxInstances: 3,

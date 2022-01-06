@@ -1,6 +1,7 @@
 const sharedConfig = require("./wdio-shared.conf");
 
 const drivers = {
+	/*
 	chrome: {
 		version: '96.0.4664.45',
 		arch: process.arch,
@@ -9,11 +10,15 @@ const drivers = {
 	firefox: {
 		version: 'latest'
 	},
+	*/
 	chromiumedge: {
 		version: 'latest',
 		arch: process.arch,
 		acceptInsecureCerts: true,
 		baseURL: "https://msedgedriver.azureedge.net"  // from here: "https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver"
+	},
+	opera: {
+		version: 'latest'
 	}
 }
 
@@ -21,6 +26,7 @@ exports.config = {
 	...sharedConfig,
 	...{
 		capabilities: [
+			/*
 			{
 				maxInstances: 3,
 				browserName: 'chrome',
@@ -35,12 +41,21 @@ exports.config = {
 					args: ['-headless']
 				}
 			},
+			*/
 			{
 				maxInstances: 3,
 				browserName: 'MicrosoftEdge',
 				'ms:edgeOptions': {
 					args: ['--start-maximized']
 				},
+			},
+			{
+				browserName: 'operablink',
+				chromeOptions: {
+					args: [],
+					extensions: []
+					//binary: <path_to_opera>
+				}
 			}
 		],
 		services: [
@@ -53,7 +68,8 @@ exports.config = {
 		],
 		seleniumArgs: {
 			javaArgs: [
-				'-Dwebdriver.edge.driver=C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe'
+				'-Dwebdriver.edge.driver=C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe',
+				'-Dwebdriver.opera.driver=C:\\Program Files (x86)\\Opera\\42.0.2393.94\\opera.exe'
 			]
 		},
 		reporters: ['spec']
