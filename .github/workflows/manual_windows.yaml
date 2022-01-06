@@ -1,4 +1,4 @@
-name: ubuntu - Manual workflow for automated tests on ubuntu-latest
+name: windows10 - Manual workflow for automated tests on windows10
 
 on:
   workflow_dispatch:
@@ -8,7 +8,7 @@ on:
         required: false
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: windows-2019
     steps:
       - name: Checkout
         uses: actions/checkout@v2

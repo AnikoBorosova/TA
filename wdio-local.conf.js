@@ -21,20 +21,15 @@ exports.config = {
 				maxInstances: 3,
 				browserName: 'firefox',
 				"moz:firefoxOptions": {
-					//flag to activate Firefox headless mode (see https://github.com/mozilla/geckodriver/blob/master/README.md#firefox-capabilities for more details about moz:firefoxOptions)
 					args: ['-headless']
 				}
-			},
-			{
-				maxInstances: 3,
-				browserName: 'MicrosoftEdge',
-			},
+			}
 		],
 		services: [
 			['selenium-standalone', {
 				logPath: 'logs',
-				installArgs: { drivers }, // drivers to install
-				args: { drivers } // drivers to use
+				installArgs: { drivers },
+				args: { drivers }
 			}]
 		],
 		reporters: ['spec']

@@ -2,13 +2,18 @@ const sharedConfig = require("./wdio-shared.conf");
 
 const drivers = {
 	chrome: {
-		version: 'latest'
+		version: '96.0.4664.45',
+		arch: process.arch,
+		baseURL: 'https://chromedriver.storage.googleapis.com'
 	},
 	firefox: {
 		version: 'latest'
 	},
-	edge: {
-		version: 'latest'
+	chromiumedge: {
+		version: 'latest',
+		arch: process.arch,
+		acceptInsecureCerts: true,
+		baseURL: "https://msedgedriver.azureedge.net"  // from here: "https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver"
 	}
 }
 
@@ -27,27 +32,30 @@ exports.config = {
 				maxInstances: 3,
 				browserName: 'firefox',
 				"moz:firefoxOptions": {
-					//flag to activate Firefox headless mode (see https://github.com/mozilla/geckodriver/blob/master/README.md#firefox-capabilities for more details about moz:firefoxOptions)
 					args: ['-headless']
 				}
 			},
 			{
 				maxInstances: 3,
-				//browserName: 'MicrosoftEdge',
-				browserName: 'edge',
-				browserVersion: 'latest',
+				browserName: 'MicrosoftEdge',
 				'ms:edgeOptions': {
-					args: ['--start-maximized', '--headless']
+					args: ['--start-maximized']
 				},
-			},
+			}
 		],
 		services: [
 			['selenium-standalone', {
 				logPath: 'logs',
-				installArgs: { drivers }, // drivers to install
-				args: { drivers } // drivers to use
+				version: "3.141.59",
+				installArgs: { drivers },
+				args: { drivers }
 			}]
 		],
+		seleniumArgs: {
+			javaArgs: [
+				'-Dwebdriver.edge.driver=C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe'
+			]
+		},
 		reporters: ['spec']
 	}
 }
