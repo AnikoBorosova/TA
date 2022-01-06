@@ -51,7 +51,7 @@ exports.config = {
 			},
 			{
 				browserName: 'operablink',
-				chromeOptions: {
+				'goog:chromeOptions': {
 					args: [],
 					extensions: []
 					//binary: <path_to_opera>
