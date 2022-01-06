@@ -46,6 +46,7 @@ exports.config = {
 				},
 			},
 			{
+				maxInstances: 3,
 				browserName: 'opera',
 				'goog:chromeOptions': {
 					args: [],
