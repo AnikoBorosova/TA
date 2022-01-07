@@ -32,13 +32,7 @@ Optional steps:
     - signInTests, 
     - purchaseTests
 
-
-
-
-
-
-## How to run the tests in a CI/CD pipeline
-This project is using Jenkins as an automation server.
+### Jenkins
 
 - First set up a Jenkins job - I chose ```Freestyle project``` as the type of the job
 - Use the ```Configure``` menu to add the settings for the job
@@ -47,13 +41,9 @@ This project is using Jenkins as an automation server.
     - Select the ```Extended Choice Parameter``` from the dropdown menu
     - Set the 'Parameter Type' to ```Multi Select```
     - Set the 'Number of Visible Items' and 'Delimiter' as you like
-    - Set the 'Value' list based on the ```suites``` array in your ```wdio-remote.conf.js``` file. Here we have only 2 suites (--suite signInTests,--suite purchaseTests), but these can be expanded anytime
-
-![jenkins1](https://user-images.githubusercontent.com/26765655/118711242-a49a3a80-b81f-11eb-955b-7e5760ea8fb5.png)
+    - Set the 'Value' list based on the ```suites``` array in your ```wdio-shared.conf.js``` file. Here we have only 2 suites (--suite signInTests,--suite purchaseTests), but these can be expanded anytime
 
 - In the 'Source Code Management' section choose the option 'Git', than add the link of the repository and the branch name: ```*/main```
-
-![jenkins2](https://user-images.githubusercontent.com/26765655/118711262-a95eee80-b81f-11eb-90d7-339370a05d74.png)
 
 - In the 'Build' section choose 'Execute shell' from the options and add these commands to the shell:
 
@@ -61,7 +51,7 @@ This project is using Jenkins as an automation server.
 npm install
 touch PARAMS
 echo "$Parameters" > PARAMS
-node ./node_modules/.bin/wdio ./wdio-remote.conf.js $(sed 's/,/ /g' PARAMS)
+node prepareConfig.js && ./node_modules/.bin/wdio ./wdio-jenkins.conf.js $(sed 's/,/ /g' PARAMS)
 ```
 
 - Save the configuration
@@ -71,11 +61,78 @@ node ./node_modules/.bin/wdio ./wdio-remote.conf.js $(sed 's/,/ /g' PARAMS)
 ### Notes
 - You can also choose to run the tests periodically and automatically. In this case you need to add a schedule within the 'Build triggers' section in Configuration using cron syntax (e.g. ```H 3,20 * * *```).
 - You can also choose the 'GitHub hook trigger' option to trigger builds based on GitHub pushes.
-- Or if this project would be part of a development project, there would be an option to build these tests when the website's code is being updated by the development team. In this case you could set up the build rules within the Jenkinsfile of their repository and make the Build as a separate step in their CI/CD pipeline.
 
+## The CI/CD pipeline and all related information
+The Jenkins setup runs the tests on `Linux` using the selenium grid with Chrome, Firefox and Microsoft Edge. This setup is determined by the docker image (more info below at the `The Grid Console` and `The docker images behind the Grid Console` section).
+The GitHub Actions setup runs the tests on `Windows10`, `Ubuntu` and 'MacOS'. This setup is determined by the .yaml config files (`./github/workflows/*.yaml`).
 
+- Adjust the scheduled time based on Daylight Saving Time - cron syntax uses UTC time, so if you want to run your tests at a given time all the time, make sure to adjust the configuration.
+To do so:
+  - on Jenkins: Go to the given `Jenkins-job --> Configuration menu --> Build Triggers --> Build periodically --> Schedule`
+  - on GitHub Actions: find the `./github/workflows/scheduled_*.yaml file within the repo --> on --> schedule --> cron`
 
+- Store any user-credentials and sensitive data as secrets
+To do so on Jenkins:
+  - go to the given `Jenkins-job --> Configuration menu --> Build environment --> Use secret text(s) or file(s)`
+  - you need to have admin credentials on Jenkins to be able to add new credentials
+  - choose the method that best fits you - currently used method is `Username and password (separated)`
+  - add credentials and create a new variable (current credentials are already added as a variable and can be used in multiple Jenkins-jobs)
+  - use this variable within your build command in the `Execute shell` section
 
+To do so on GitHub Actions:
+  - go to `https://github.com/AnikoBorosova/Test-Automation/ --> Settings --> Secrets --> 'Action secrets' section`
+  - add new repository secrets or use/update the existing ones (Name/Value pair) (you need to be an admin of the repository to be able to modify secrets)
+  - use the secrets within the build command located in your yaml files in the repo (`./github/workflows/*.yaml`)
+
+### If a session is not started after you hit 'Build' on Jenkins
+- go to Rancher dashoard --> Workload ---> Deployments
+- find the`selenium-selenium-chrome` node or `selenium-selenium-hub` node
+- check the logs to find possible errors
+
+### Redeploy the nodes on Rancher
+When facing any errors on Rancher, a simple redeploy might solve your issues. To do this:
+- open the `selenium-selenium-chrome` node or `selenium-selenium-hub` node
+- find the `Redeploy` button within the context menu in the upper right corner
+- hit 'Redeploy' and wait until the node re-starts itself
+- check out the logs of 'selenium-selenium-hub' node and wait until it says: `Registered a node`
+- check out the logs on 'selenium-selenium-chrome' node (currently using 3 pods) and wait until all of them say: `Connected to the hub and ready for use`
+
+### The Grid Console
+There is a Selenium Grid Console we can use to visually check the state of the selenium grid on Rancher.
+To be able to see the console, you have to add your current IP address first.
+- go to `Rancher --> Service Discovery --> Ingresses --> selenium-ingress
+- find the `Edit Config` option within the context menu in the upper right corner
+- go to `Labels and Annotations` section
+- add you IP address into the `nginx.ingress.kubernetes.io/whitelist-source-range` Value field
+- hit `Save` and go back to the console url - it might take a few minutes until it refreshes and after that you will be able to see the console.
+
+Useful information on the console: 
+- how many Chromes are up and running
+- what are their hosts
+- what are their capabilities settings
+- what is the Chrome version that is used (determined by the docker image used for the selenium grid)
+- etc.
+
+### The docker images behind the Grid Console
+It is recommended to update the docker image from time to time as the selenium-team releases new versions regularly.
+To do so:
+- go to `Rancher --> staging --> Workload ---> Deployments
+- find `selenium-selenium-chrome` node and `selenium-selenium-hub` node
+- find the `Edit Config` option within the context menu in the upper right corner within each node
+- change the docker image tag number within the `Container Image` input
+- hit `Save` at the bottom of the page and wait until the nodes re-start themselves
+- check the logs to see when the process is finished with the `Connected to the hub and ready for use` and `Registered a node` messages. Alternatively, you can follow the process on Grid Console, too.
+
+Search for new docker image tags on these links:
+- for the hub: https://hub.docker.com/r/selenium/hub/tags
+- for the chrome node: https://hub.docker.com/r/selenium/node-chrome/tags
+
+Older docker images may use older browser versions, therefore make it possible to run your tests in older browser versions.
+
+### The selenium-standalone service and the GitHub Actions
+The `selenium-standalone service` is a wdio package that makes possible to run a selenium grid in the background of wdio tests.
+The tests on GitHub Actions do not use the above-mentioned docker images, but use the info set in the `wdio-github.conf.js` file and the `workflow yaml files`. Based on these the GitHub Actions starts the selenium server (given in the wdio-github.conf.js) on o given OS (given in the yaml files), and uses the given browsers (configured in the wdio-github.conf.js).
+It is possible to expand the wdio-shared.conf.js file with Firefox, IE and Edge browsers, so GitHub Actions would run tests on these browser, too.
 
 ## Structure of the repository
 
@@ -171,6 +228,24 @@ Contains various util functions used in tests, including
 ## Naming conventions
 The xPaths stored in the pageObject files are stored in getter functions.
 The functions stored in pageObjects that are directly called in test files are named as `doXYZ() {}` functions and the validation functions directly called in test files are named `validateXYZ() {}` functions. This convention helps understanding the test steps and debugging.
+
+There are setter functions in pageObjects that's names do not start with 'do...' or 'validate...'. These are usually helper functions that help make do... functions cleaner or we use them in more than one places to prevent repetition in the code. Any inconsistencies you find are probably mistakes, so feel free to fix and make the code cleaner.
+
+## Debugging - best practices
+- errors logged during test runs always specify the exact line where the error happens making debugging easier
+- an allure-report is created at the end of each test run on Jenkins. This report shows graphs, statistics and if any error happens, the exact logs and screenshots of the errors. 
+
+    Jenkins stores this report at the `Allure report` section of the given Jenkins-job: `https://path-to-your-jenkins/job/selenium-staging/allure/`.
+
+- screenshots are made of each error on both Jenkins and GitHub Actions. 
+    
+    Jenkins stores these images at each build's `Artifacts (Építőkövek)` section as a downloadable asset (e.g.`https://path-to-your-jenkins/job/selenium-staging/[build_number]/`)
+
+    You can also chech these screenshots within the allure-report that is created on Jenkins
+    
+    GitHub Actions stores these images at each builds `Artifacts` section as a downloadable asset (e.g. `https://github.com/AnikoBorosova/Test-Automation/actions/runs/[build_number]`)
+
+- if an elem is not displayed or not interactable, check out if something else is not hovering over it e. g. modals, dropdowns etc.
 
 ## Test scenarios 
 
