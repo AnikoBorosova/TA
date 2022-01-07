@@ -1,0 +1,26 @@
+name: macOS - Scheduled workflow for automated tests on macos-latest
+
+on:
+  schedule:
+  - cron: "0 8 * * 1"
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+            node-version: 14.17.0
+      - name: Setup
+        run: npm install
+      - name: Test
+        shell: bash
+        run: node prepareConfig.js && ./node_modules/.bin/wdio ./wdio-github-macOS.conf.js
+      - name: Screenshot handling
+        uses: actions/upload-artifact@v1
+        if: failure()
+        with:
+          name: wdio-error-screenshots
+          path: errorScreenshots
