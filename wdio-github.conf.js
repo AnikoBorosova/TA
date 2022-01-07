@@ -10,7 +10,7 @@ const drivers = {
 		version: 'latest'
 	},
 	chromiumedge: {
-		version: 'latest',
+		version: '96.0.1054.62',
 		arch: process.arch,
 		acceptInsecureCerts: true,
 		baseURL: "https://msedgedriver.azureedge.net"  // from here: "https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver"
