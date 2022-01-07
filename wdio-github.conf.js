@@ -14,10 +14,12 @@ const drivers = {
 		arch: process.arch,
 		acceptInsecureCerts: true,
 		baseURL: "https://msedgedriver.azureedge.net"  // from here: "https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver"
-	},
+	}
+	/*
 	opera: {
 		version: 'latest'
 	}
+	*/
 }
 
 exports.config = {
@@ -44,7 +46,8 @@ exports.config = {
 				'ms:edgeOptions': {
 					args: ['--start-maximized']
 				},
-			},
+			}
+			/*
 			{
 				maxInstances: 3,
 				browserName: 'opera',
@@ -53,6 +56,7 @@ exports.config = {
 					extensions: []
 				}
 			}
+			*/
 		],
 		services: [
 			['selenium-standalone', {
@@ -64,8 +68,8 @@ exports.config = {
 		],
 		seleniumArgs: {
 			javaArgs: [
-				'-Dwebdriver.edge.driver=C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe',
-				'-Dwebdriver.opera.driver=C:\\Program Files (x86)\\Opera\\42.0.2393.94\\opera.exe'
+				'-Dwebdriver.edge.driver=C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe'
+				//'-Dwebdriver.opera.driver=C:\\Program Files (x86)\\Opera\\42.0.2393.94\\opera.exe'
 			]
 		},
 		reporters: ['spec']
