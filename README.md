@@ -1,43 +1,41 @@
-## Web tests created and executed by using webdriverio, jasmine, chromedriver and JUnit-reporter
-## API tests created with Postman and ChaiJS, and executed by using newman and JUnit-reporter
+## Automated UI-tests with WebdriverIO - wdio v7 + selenium-standalone service
+
 Website being tested: http://automationpractice.com/index.php
 
----------------------
-
-## How to run the tests locally
+## Run the tests locally
 
 ### System Requirements:
 
-Browser used: Google Chrome
-
-OS used: Linux/Ubuntu
-
-NodeJS version: ```12.16.1``` or above
-
-### Web tests
-Location of the web tests: ```./wdioTests/specs/```
+Browsers: Google Chrome, Mozilla Firefox, Microsoft Edge, Safari, Opera
+OS: Linux/Ubuntu, Windows10 or MacOS
+NodeJS version: ```14.17.0```
 
 - clone the repository
-- make sure you have the latest stable Chrome version: v90.0.4430.212
-- if you have an older version and do not wish to upgrade, than change the ```chromedriver``` version within the package.json file accordingly
 - do ```npm install```
-- start the tests with the command: ```npm run testLocal```
-- find the xml report of the results in the ```'./wdioTests/results/'``` folder
+- start the tests with the command: ```npm run testLocal``` to run the locally
+- local test results are made with the ```@wdio/spec-reporter```
 
-### API tests
-Location of the web tests: ```./API_tests/APITests.postman_collection.json```
+Optional steps:
+- check out the other scripts in package.json. You can find the pre-written commands for each existing test suites and the complete builds as well. Use these commands as `npm run >>script<<` (e.g. 'npm run signInTests').
+- the default setting is to run the tests in headless mode. You can easily switch to normal browser by removing the `--headless` flag from the 'args' array of the correspondent browser configuration in the `./test/e2eSpecs/wdio-local.conf.js` file
 
-API_tests are usually not placed within the same repository as wdio tests, but for simplicity, I placed them here for this project.
-The execution needs the newman npm package, but I did not want to install it within the package.json of the webdriverio tests for the above reason.
+## Run the tests remotely
 
-- clone the repository
-- do ```npm install newman@5.2.2```
-- do ```cd API_tests```
-- start the tests with the command: ```newman run APITests.postman_collection.json```
+### GitHub Actions
 
-or if you wish to generate the xml report of the results:
-- use the command: ```newman run APITests.postman_collection.json -r junit --reporter-junit-export ./results/```
-- find the xml report of the results in the ```'./API_tests``` folder
+- go to https://github.com/AnikoBorosova/Test-Automation/actions
+- select any manual workflow on the left (currently configured on windows10 or macOS)
+- click `Run workflow` button
+- mandatory: select the `branch` you want to run the tests on (default is master)
+- optional: add the `test suite` you want to run (e.g. `signInTests`). Leave the input empty if you want to run all tests
+  - selectable suites: 
+    - signInTests, 
+    - purchaseTests
+
+
+
+
+
 
 ## How to run the tests in a CI/CD pipeline
 This project is using Jenkins as an automation server.
@@ -75,11 +73,104 @@ node ./node_modules/.bin/wdio ./wdio-remote.conf.js $(sed 's/,/ /g' PARAMS)
 - You can also choose the 'GitHub hook trigger' option to trigger builds based on GitHub pushes.
 - Or if this project would be part of a development project, there would be an option to build these tests when the website's code is being updated by the development team. In this case you could set up the build rules within the Jenkinsfile of their repository and make the Build as a separate step in their CI/CD pipeline.
 
-## Links to the results in Calliope.pro
 
-- Link to wdioTests results: https://app.calliope.pro/reports/89681
-- Link to API tests results: https://app.calliope.pro/reports/89682
 
+
+
+## Structure of the repository
+
+### Root level
+- `README.md`
+- `secretConfig.json`: to store the test user's credentials for local running (currnetly unused).
+- `prepareConfig.js`: responsible to build configs based on `envconfig`, `testConfig` and `secretConfig.js`. User-credentials are stored in secrets on Jenkins and on the GitHub repository, or in a secretConfig.json locally.
+- `package.json`: find all important build scripts here
+
+### ./.github/workflows/
+Contains yaml files needed to run tests on GitHub Actions. There is no need to specify browsers in these files - the wdio-*.conf.js file takes care of that. 
+
+The yaml files for scheduled tests determine the build schedule, run all tests on the corresponding OS and upload error screenshots if any
+- `scheduled_mac.yaml`;
+- `scheduled_ubuntu.yaml`;
+- `scheduled_windows.yaml`;
+
+The yaml files for manual tests run tests on the corresponding OS, make possible to run tests with or without test suite flags and upload error screenshots if any
+- `manual_mac.yaml`;
+- `manual_windows.yaml`;
+
+### ./tests/
+- contains the `test files`
+- contains the `PageObjects`
+
+This is the meat of the tests. 
+All the element xPaths and test logic is contained in the PageObject files.
+The test files themselves only contains the steps and inputs (test data) using the jasmine assert library (https://jasmine.github.io/).
+
+The main PageObject file is the `./tests/pageObjects/Page.page.js`.
+All the other PageObjects are inheriting from this one and the common assets (xPaths, functions) are gathered here so the other POs can have access to these.
+
+### The Test Runner
+The Test Runner makes it possible to run the tests in different configurations.
+Depending on which service we use (selenium-standalone, chromeDriver, appium etc.), wdio sets up the selenium server and basically the selenium grid in the background.
+
+The test runner configuration can be found in these files:
+- `./wdio-shared.conf.js`
+- `./wdio-local.conf.js`
+- `./wdio-staging-github.conf.js`
+- `./wdio-staging-github_macOS.conf.js`
+- `./wdio-staging.jenkins.conf.js`
+
+Currently we use the `selenium-standalone service` in the local and the GitHub Actions configuration.
+The Jenkins configuration uses different setup. (See the differences in the `hostname` and the `services` object.)
+
+We can state within the Test Runner which tests we want to include and exclude in our builds and we can also group certain tests into suites to make it possible to run only certain groups of tests.
+
+The `maxInstances` and `capabilities` section is responsible to tell which browsers and drivers we want to use. The Test Runner makes it easy to run tests simultaneously in more than one session in more than one browser. 
+The browsers can also be configured in different ways, such as:
+- '--start-maximized'
+- '--headless'
+- '--disable-gpu'
+- '--window-size=1920,1080'
+- '--no-sandbox'
+- '--no-cache'
+- etc.
+
+The `logLevel` can be set up in different ways depending on how detailed logs we need.
+
+The `bail` option is responsible to end tests after a given amount of error. We do not use this feature because it would stop the whole build after a certain amount of error but NOT the exact test file that fails.
+Instead of this we use the `failFast: true` option in the jasmine configuration. This stops the test file which fails after the first error and proceeds to the next test file. This is needed to prevent tests from running 2-3 hours unnecessarily, which could have unreasonable costs on GitHub Actions.
+
+The `waitForTimeout` sets the time we wait until a certain element is existing or ready to use (when using wdio's own waitFor... functions). This can be overwritten in the tests and we do overwrite it in our `./tests/testData/envConfig.json` file.
+
+Webdriverio makes it possible to run your test in `docker` using docker images of your choice. There is a detailed guide on how to set this up in the uncommented section within the config file.
+
+The `Reporters` array is used to set the reporting system that summarizes the test results at the end of each run. We use `allure` reporting on Jenkins and `spec` reporting on GitHub Actions and on local runs.
+
+Currently we use `Jasmine` as a test framework for assertions, but wdio can be integrated with Mocha and Cucumber, too.
+
+Webdriverio has handy-dandy `'before' and 'after' hooks` to handle steps in different stages of the test runs.
+The whole list of options can be found here: https://webdriver.io/docs/options/#hooks
+
+Currently we use the `afterHook` and `afterTest` hooks to make screenshots about errors and upload them into a separate `errorScreenShots` folder runnig locally and remotely (GitHub Actions, Jenkins). The 'afterHook' hook makes sure to create screenshots of errors happening in Jasmine's before/after hooks, and the 'afterTest' hook is responsible for errors happening in other parts of the test code. 
+
+The 'before' and 'after' hook would be useful to connect to the database and insert or delete userData needed in the tests.
+This way we would not have to do these steps in each test file, but the Test Runner would take care of it at one place. This would also be helpful for us to make sure the testData would always be cleared from the database after each test file run. If we would run these steps within the test files, the 'afterAll' hook would not run in case of any error happens during the test and that could affect the upcoming test's testData.
+
+### ./tests/testData/
+Contains all testData we use
+- `userData.json` fall testData we use in the test files - to gather them together into one file will make it possible to easily change and vary testData and thus have a data-driven approach in our test automation solution
+- `envConfig.json`: environment configs only
+
+The before-mentioned `prepareConfig.js` is responsible to prepare the configs for the test. It builds and copies the envConfig.json file and the userData.json file into a separate folder (`./configs/`) and the test files require these configs from this common 'configs' folder.
+
+### ./utils
+Contains various util functions used in tests, including
+- `clickHelper.js` for clicking on elements hovering over other elements (modals, pop-ups)
+- `randomizeEmaulAddress.js`
+- `saveScreenshotHelper.js` for creating screenshots in case of errors and putting them into a pre-defined folder
+
+## Naming conventions
+The xPaths stored in the pageObject files are stored in getter functions.
+The functions stored in pageObjects that are directly called in test files are named as `doXYZ() {}` functions and the validation functions directly called in test files are named `validateXYZ() {}` functions. This convention helps understanding the test steps and debugging.
 
 ## Test scenarios 
 
@@ -93,7 +184,21 @@ Find the scenarios in ```./wdioTests/specs/```
 - Proceed to registration form
 - Add correct registration data and validate that the account is created succesfully
 
-2. Login process - positive scenario
+2. Login process
+
+2.a. Login process - negative scenario - no user data added
+- Navigate to 'Sign in' page
+- Try to log in with adding no credentials and validate that the log-in process is not successful
+
+2.b Login process - negative scenario - invalid email
+- Navigate to 'Sign in' page
+- Try to log in with adding invalid email/valid password and validate that the log-in process is not successful
+
+2.b Login process - negative scenario - invalid password
+- Navigate to 'Sign in' page
+- Try to log in with adding valid email/invalid password and validate that the log-in process is not successful
+
+2.d. Login process - positive scenario
 - Navigate to 'Sign in' page
 - Log in with existing user credentials and validate that the user is getting in their account
 
@@ -109,44 +214,7 @@ Find the scenarios in ```./wdioTests/specs/```
 - Proceed to 'Order summary' page
 - Confirm order and validate that the 'Confirmation' headline appears and the purchase process was successful
 
-
-### API testing scenarios
-Find the scenarios in ```./API_tests/```
-
-1. Get status of main page - positive scenario - Expect that response status code is 200
-2. POST request with all correct registration data - positive scenario - Expect that response status code is 200
-3. POST request with all correct login credentials - positive scenario - Expect that response text includes text snippet 'my personal information' (that is located within a profile page)
-4. POST request for adding item in cart with correct data of an item - positive scenario - Expect that response status code is 200
-
-
-## What you used to select the scenarios, what was your approach?
-First I got to know the website by manually checking it. 
-Secondly, I checked that the features are working right manually.
-When selecting the scenarios to test, I focused on the main features of the website in an order in which the user is most likely to engage with the page.
-
-
-## Why are these scenarios the most important?
-These scenarios are focusing on the main features of the website. 
-Correct working of these features are crucial both from the users' and the provider's point of view - because of user experience, customer satisfaction, the provider's operation and income.
-
-The first API test is checking if the response's status code is 200 - so that the website is up and running.
-
-Registration is the first key in a user roadmap, it is unavoidable if a user needs a profile page to make orders and payments, so testing of registration is crucial.
-Log-in is also a key point in a website, reasons are similar to the registration process.
-
-Purchasing an item is the main feature of the website, so testing this feature can not be left out. The API test focuses on whether the chosen item can be put to cart, and the web test is focusing on the process of buying the item - whether the user can go through all the steps and the process is successful at the end.
-
-
 ## What could be the next steps to the project?
 - test all the other features on the website (buying more than 1 item, checking the validity of all the information within the cart, checking summary details etc.)
 - test negative scenarios (registering with incorrect data, log-in attempt with incorrect data etc.)
-- the email-address is randomized at the registration process to make sure the tests can be run over and over again - however, this approach can pollute the database in the long run. A different approach can be that the test file is connecting to the database at the beginning and after the test is finished, it should remove the data from the database and close the connection. 
-- This particular website does not operate with confirmation emails at registration or purchase process, but most of the modern websites do use this technique to make the process more safe. With a more advanced devops infrastructure (like Rancher, Kubernetes etc.) we can set up an email confirmation service, that mocks a real-life email service and can receive an email from a given source. 
-    - Within the test file we can start an express server, that listens to a response, 
-    - send out the registration and the email, 
-    - the email confirmation service can receive it, parse out the confirmation link and send it back
-    - the test can receive the parsed link with the express server and open it to confirm the process
-- configure the wdio tests to run on other browsers and OS
-- configure the wdio tests to run more than 1 test paralelly on more than 1 browser - this is utilizing the power of the selenium grid
-- using Rancher to operate the selenium grid, utilizing various docker images
-- using Jenkins in different ways - configuring to run the tests in every new push to the main branch, or run them periodically (e.g. twice a day), or connect them to the CI/CD pipeline of the development team who created the website)
+- the email-address is randomized at the registration process to make sure the tests can be run over and over again - however, this approach can pollute the database in the long run. A different approach can be that the test file is connecting to the database at the beginning and after the test is finished, it should remove the data from the database
