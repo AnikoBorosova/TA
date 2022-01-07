@@ -54,6 +54,14 @@ echo "$Parameters" > PARAMS
 node prepareConfig.js && ./node_modules/.bin/wdio ./wdio-jenkins.conf.js $(sed 's/,/ /g' PARAMS)
 ```
 
+- In 'Post-build Actions' section set up the following actions:
+- ```Allure-report``` (needs 'Allure' Jenkins-plugin)
+- ```Archive the artifacts``` (for storing the error screenshots)
+
+If you use these softwers:
+- ```Slack notifications``` (needs 'Slack' Jenkins-plugin)
+- ```Xray: Results Import Task``` (needs 'Xray - Test Management for Jira Plugin')
+
 - Save the configuration
 - Go to the 'Build with Parameters' menu
 - Choose the test suites you wish to run from the select menu and hit 'Build'
@@ -116,7 +124,7 @@ Useful information on the console:
 ### The docker images behind the Grid Console
 It is recommended to update the docker image from time to time as the selenium-team releases new versions regularly.
 To do so:
-- go to `Rancher --> staging --> Workload ---> Deployments
+- go to `Rancher --> Workload ---> Deployments
 - find `selenium-selenium-chrome` node and `selenium-selenium-hub` node
 - find the `Edit Config` option within the context menu in the upper right corner within each node
 - change the docker image tag number within the `Container Image` input
@@ -172,9 +180,9 @@ Depending on which service we use (selenium-standalone, chromeDriver, appium etc
 The test runner configuration can be found in these files:
 - `./wdio-shared.conf.js`
 - `./wdio-local.conf.js`
-- `./wdio-staging-github.conf.js`
-- `./wdio-staging-github_macOS.conf.js`
-- `./wdio-staging.jenkins.conf.js`
+- `./wdio-github.conf.js`
+- `./wdio-github_macOS.conf.js`
+- `./wdio-jenkins.conf.js`
 
 Currently we use the `selenium-standalone service` in the local and the GitHub Actions configuration.
 The Jenkins configuration uses different setup. (See the differences in the `hostname` and the `services` object.)
@@ -235,11 +243,11 @@ There are setter functions in pageObjects that's names do not start with 'do...'
 - errors logged during test runs always specify the exact line where the error happens making debugging easier
 - an allure-report is created at the end of each test run on Jenkins. This report shows graphs, statistics and if any error happens, the exact logs and screenshots of the errors. 
 
-    Jenkins stores this report at the `Allure report` section of the given Jenkins-job: `https://path-to-your-jenkins/job/selenium-staging/allure/`.
+    Jenkins stores this report at the `Allure report` section of the given Jenkins-job: `https://path-to-your-jenkins/job/your-jenkins-job/allure/`.
 
 - screenshots are made of each error on both Jenkins and GitHub Actions. 
     
-    Jenkins stores these images at each build's `Artifacts (Építőkövek)` section as a downloadable asset (e.g.`https://path-to-your-jenkins/job/selenium-staging/[build_number]/`)
+    Jenkins stores these images at each build's `Artifacts (Építőkövek)` section as a downloadable asset (e.g.`https://path-to-your-jenkins/job/your-jenkins-job/[build_number]/`)
 
     You can also chech these screenshots within the allure-report that is created on Jenkins
     
