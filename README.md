@@ -257,9 +257,6 @@ There are setter functions in pageObjects that's names do not start with 'do...'
 
 ## Test scenarios 
 
-### Web testing scenarios
-Find the scenarios in ```./wdioTests/specs/```
-
 1. Registration process - positive scenario
 - Start from main page
 - Navigate to 'Sign in' page
@@ -269,21 +266,21 @@ Find the scenarios in ```./wdioTests/specs/```
 
 2. Login process
 
-2.a. Login process - negative scenario - no user data added
-- Navigate to 'Sign in' page
-- Try to log in with adding no credentials and validate that the log-in process is not successful
+    2.a. Login process - negative scenario - no user data added
+      - Navigate to 'Sign in' page
+      - Try to log in with adding no credentials and validate that the log-in process is not successful
 
-2.b Login process - negative scenario - invalid email
-- Navigate to 'Sign in' page
-- Try to log in with adding invalid email/valid password and validate that the log-in process is not successful
+    2.b Login process - negative scenario - invalid email
+      - Navigate to 'Sign in' page
+      - Try to log in with adding invalid email/valid password and validate that the log-in process is not successful
 
-2.b Login process - negative scenario - invalid password
-- Navigate to 'Sign in' page
-- Try to log in with adding valid email/invalid password and validate that the log-in process is not successful
+    2.c Login process - negative scenario - invalid password
+      - Navigate to 'Sign in' page
+      - Try to log in with adding valid email/invalid password and validate that the log-in process is not successful
 
-2.d. Login process - positive scenario
-- Navigate to 'Sign in' page
-- Log in with existing user credentials and validate that the user is getting in their account
+    2.d. Login process - positive scenario
+      - Navigate to 'Sign in' page
+      - Log in with existing user credentials and validate that the user is getting in their account
 
 3. Item purchase process - positive scenario
 - Start from main page
