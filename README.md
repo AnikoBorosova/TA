@@ -7,7 +7,9 @@ Website being tested: http://automationpractice.com/index.php
 ### System Requirements:
 
 Browsers: Google Chrome, Mozilla Firefox, Microsoft Edge, Safari, Opera
+
 OS: Linux/Ubuntu, Windows10 or MacOS
+
 NodeJS version: ```14.17.0```
 
 - clone the repository
