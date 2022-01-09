@@ -1,4 +1,4 @@
-name: ubuntu-latest - Manual workflow for automated tests on ubuntu-latest
+name: ubuntu - Manual workflow for automated tests on ubuntu-latest
 
 on:
   workflow_dispatch:
