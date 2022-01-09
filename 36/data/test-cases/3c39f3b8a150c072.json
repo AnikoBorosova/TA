@@ -1,0 +1,58 @@
+{
+  "uid" : "3c39f3b8a150c072",
+  "name" : "\"before all\" hook",
+  "fullName" : "Test for registration process.\"before all\" hook",
+  "historyId" : "16bd938306daafbca773a9b2ab7e8956",
+  "time" : {
+    "start" : 1641753171369,
+    "stop" : 1641753175283,
+    "duration" : 3914
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "1-0"
+  }, {
+    "name" : "suite",
+    "value" : "Test for registration process"
+  }, {
+    "name" : "testClass",
+    "value" : "Test for registration process"
+  }, {
+    "name" : "testMethod",
+    "value" : "\"before all\" hook"
+  }, {
+    "name" : "package",
+    "value" : "Test for registration process"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "firefox-95.0"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "3c39f3b8a150c072.json",
+  "parameterValues" : [ "firefox-95.0" ]
+}

@@ -1,0 +1,58 @@
+{
+  "uid" : "e37c7d142ed2985b",
+  "name" : "adds incorrect data (password) and validates that the login was unsuccessful",
+  "fullName" : "Test for login process: unsuccessful login - incorrect password.adds incorrect data (password) and validates that the login was unsuccessful",
+  "historyId" : "ccd574fa1a43925ce92b7265fa0b69e8",
+  "time" : {
+    "start" : 1641753162679,
+    "stop" : 1641753163859,
+    "duration" : 1180
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-1"
+  }, {
+    "name" : "suite",
+    "value" : "Test for login process: unsuccessful login - incorrect password"
+  }, {
+    "name" : "testClass",
+    "value" : "Test for login process: unsuccessful login - incorrect password"
+  }, {
+    "name" : "testMethod",
+    "value" : "adds incorrect data (password) and validates that the login was unsuccessful"
+  }, {
+    "name" : "package",
+    "value" : "Test for login process: unsuccessful login - incorrect password"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-96.0.4664.110"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e37c7d142ed2985b.json",
+  "parameterValues" : [ "chrome-96.0.4664.110" ]
+}

@@ -1,0 +1,58 @@
+{
+  "uid" : "4f4c07aadd9e8746",
+  "name" : "doesn't add any data and validates that the login was unsuccessful",
+  "fullName" : "Test for login process: unsuccessful login - no data.doesn't add any data and validates that the login was unsuccessful",
+  "historyId" : "88f40454768c0afa0f8dacc6c0092a9e",
+  "time" : {
+    "start" : 1641753158922,
+    "stop" : 1641753160343,
+    "duration" : 1421
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-1"
+  }, {
+    "name" : "suite",
+    "value" : "Test for login process: unsuccessful login - no data"
+  }, {
+    "name" : "testClass",
+    "value" : "Test for login process: unsuccessful login - no data"
+  }, {
+    "name" : "testMethod",
+    "value" : "doesn't add any data and validates that the login was unsuccessful"
+  }, {
+    "name" : "package",
+    "value" : "Test for login process: unsuccessful login - no data"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-96.0.4664.110"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4f4c07aadd9e8746.json",
+  "parameterValues" : [ "chrome-96.0.4664.110" ]
+}

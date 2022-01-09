@@ -1,0 +1,58 @@
+{
+  "uid" : "67036d4635ae3c06",
+  "name" : "creates account and check if it proceeds to registration form",
+  "fullName" : "Test for registration process: successful registration.creates account and check if it proceeds to registration form",
+  "historyId" : "d2f37f7ec4bf0ebcc2e83489355bab5b",
+  "time" : {
+    "start" : 1641753177107,
+    "stop" : 1641753179474,
+    "duration" : 2367
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "1-0"
+  }, {
+    "name" : "suite",
+    "value" : "Test for registration process: successful registration"
+  }, {
+    "name" : "testClass",
+    "value" : "Test for registration process: successful registration"
+  }, {
+    "name" : "testMethod",
+    "value" : "creates account and check if it proceeds to registration form"
+  }, {
+    "name" : "package",
+    "value" : "Test for registration process: successful registration"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "firefox-95.0"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "67036d4635ae3c06.json",
+  "parameterValues" : [ "firefox-95.0" ]
+}
