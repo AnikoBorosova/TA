@@ -22,13 +22,13 @@ jobs:
         env:
           SUITES: ${{ github.event.inputs.suites }}
         if: ${{ github.event.inputs.suites != null || '' }}
-        run: node prepareConfig.js && ./node_modules/.bin/wdio ./wdio-github.conf.js --suite "$SUITES"
+        run: node prepareConfig.js && ./node_modules/.bin/wdio ./wdio-github-windows.conf.js --suite "$SUITES"
       - name: Test (when no suite flag)
         shell: bash
         env:
           SUITES: ${{ github.event.inputs.suites }}
         if: ${{ github.event.inputs.suites == null || '' }}
-        run: node prepareConfig.js && ./node_modules/.bin/wdio ./wdio-github.conf.js
+        run: node prepareConfig.js && ./node_modules/.bin/wdio ./wdio-github-windows.conf.js
       - name: Screenshot handling
         uses: actions/upload-artifact@v1
         if: failure()

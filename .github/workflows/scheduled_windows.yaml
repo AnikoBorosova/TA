@@ -17,7 +17,7 @@ jobs:
         run: npm install
       - name: Test
         shell: bash
-        run: node prepareConfig.js && ./node_modules/.bin/wdio ./wdio-github.conf.js
+        run: node prepareConfig.js && ./node_modules/.bin/wdio ./wdio-github-windows.conf.js
       - name: Screenshot handling
         uses: actions/upload-artifact@v1
         if: failure()

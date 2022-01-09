@@ -68,8 +68,7 @@ exports.config = {
 		],
 		seleniumArgs: {
 			javaArgs: [
-				'-Dwebdriver.edge.driver=/usr/bin/chromium'
-				//'-Dwebdriver.edge.driver=C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe'
+				'-Dwebdriver.edge.driver=C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe'
 				//'-Dwebdriver.opera.driver=C:\\Program Files (x86)\\Opera\\42.0.2393.94\\opera.exe'
 			]
 		},
