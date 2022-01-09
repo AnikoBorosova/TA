@@ -38,6 +38,10 @@ exports.config = {
                 args: { drivers }
             }]
         ],
-        reporters: ['spec']
+        reporters: ['spec', ['allure', {
+            outputDir: 'allure-results',
+            disableWebdriverStepsReporting: true,
+            disableWebdriverScreenshotsReporting: false,
+        }]]
     }
 }
