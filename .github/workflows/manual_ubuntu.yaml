@@ -1,0 +1,59 @@
+name: ubuntu-latest - Manual workflow for automated tests on ubuntu-latest
+
+on:
+  workflow_dispatch:
+    inputs:
+      suites:
+        description: 'Test suites'
+        required: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+            node-version: 14.17.0
+      - name: Setup
+        run: npm install
+      - name: Test (when added suite flag)
+        shell: bash
+        env:
+          SUITES: ${{ github.event.inputs.suites }}
+        if: ${{ github.event.inputs.suites != null || '' }}
+        run: node prepareConfig.js && ./node_modules/.bin/wdio ./wdio-github.conf.js --suite "$SUITES"
+      - name: Test (when no suite flag)
+        shell: bash
+        env:
+          SUITES: ${{ github.event.inputs.suites }}
+        if: ${{ github.event.inputs.suites == null || '' }}
+        run: node prepareConfig.js && ./node_modules/.bin/wdio ./wdio-github.conf.js
+      - name: Screenshot handling
+        uses: actions/upload-artifact@v1
+        if: failure()
+        with:
+          name: wdio-error-screenshots
+          path: errorScreenshots
+      - name: Get Allure history
+        uses: actions/checkout@v2
+        if: always()
+        continue-on-error: true
+        with:
+          ref: gh-pages
+          path: gh-pages
+      - name: Allure Report action from marketplace
+        uses: simple-elf/allure-report-action@master
+        if: always()
+        id: allure-report
+        with:
+            allure_results: report/allure-results
+            gh_pages: gh-pages
+            allure_report: allure-report
+            allure_history: allure-history
+      - name: Deploy report to Github Pages
+        if: always()
+        uses: peaceiris/actions-gh-pages@v2
+        env:
+            PUBLISH_BRANCH: gh-pages
+            PUBLISH_DIR: allure-history
