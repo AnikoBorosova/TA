@@ -1,0 +1,78 @@
+{
+  "uid" : "bfe20ca9b6409401",
+  "name" : "adds an item to the cart and checks if it was successful",
+  "fullName" : "Test for basic item purchase process.adds an item to the cart and checks if it was successful",
+  "historyId" : "2c962d2bb01918c97c222b7f1e2aaedd",
+  "time" : {
+    "start" : 1641915796954,
+    "stop" : 1641915798141,
+    "duration" : 1187
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-2"
+  }, {
+    "name" : "suite",
+    "value" : "Test for basic item purchase process"
+  }, {
+    "name" : "testClass",
+    "value" : "Test for basic item purchase process"
+  }, {
+    "name" : "testMethod",
+    "value" : "adds an item to the cart and checks if it was successful"
+  }, {
+    "name" : "package",
+    "value" : "Test for basic item purchase process"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-96.0.4664.110"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "6f502cf1d5be6591",
+        "reportUrl" : "https://AnikoBorosova.github.io/wdio_with_selenium_standalone/37//#testresult/6f502cf1d5be6591",
+        "status" : "passed",
+        "time" : {
+          "start" : 1641915235272,
+          "stop" : 1641915237238,
+          "duration" : 1966
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "bfe20ca9b6409401.json",
+  "parameterValues" : [ "chrome-96.0.4664.110" ]
+}

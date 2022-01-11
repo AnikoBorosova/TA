@@ -1,0 +1,78 @@
+{
+  "uid" : "d61da008d0c3f2b1",
+  "name" : "adds incorrect data (password) and validates that the login was unsuccessful",
+  "fullName" : "Test for login process: unsuccessful login - incorrect password.adds incorrect data (password) and validates that the login was unsuccessful",
+  "historyId" : "8f8fdaa60dbc31569ecbaeb02415a20",
+  "time" : {
+    "start" : 1641915791938,
+    "stop" : 1641915794042,
+    "duration" : 2104
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "1-1"
+  }, {
+    "name" : "suite",
+    "value" : "Test for login process: unsuccessful login - incorrect password"
+  }, {
+    "name" : "testClass",
+    "value" : "Test for login process: unsuccessful login - incorrect password"
+  }, {
+    "name" : "testMethod",
+    "value" : "adds incorrect data (password) and validates that the login was unsuccessful"
+  }, {
+    "name" : "package",
+    "value" : "Test for login process: unsuccessful login - incorrect password"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "firefox-95.0"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "3a0272d4649c38ea",
+        "reportUrl" : "https://AnikoBorosova.github.io/wdio_with_selenium_standalone/37//#testresult/3a0272d4649c38ea",
+        "status" : "passed",
+        "time" : {
+          "start" : 1641915292620,
+          "stop" : 1641915293669,
+          "duration" : 1049
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "d61da008d0c3f2b1.json",
+  "parameterValues" : [ "firefox-95.0" ]
+}

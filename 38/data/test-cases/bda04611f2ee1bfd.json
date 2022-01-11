@@ -1,0 +1,78 @@
+{
+  "uid" : "bda04611f2ee1bfd",
+  "name" : "\"before all\" hook",
+  "fullName" : "Test for registration process.\"before all\" hook",
+  "historyId" : "a84de2515dce77711a67dfc2e78288bb",
+  "time" : {
+    "start" : 1641915817594,
+    "stop" : 1641915821603,
+    "duration" : 4009
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Test for registration process"
+  }, {
+    "name" : "testClass",
+    "value" : "Test for registration process"
+  }, {
+    "name" : "testMethod",
+    "value" : "\"before all\" hook"
+  }, {
+    "name" : "package",
+    "value" : "Test for registration process"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-96.0.4664.110"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "fafbe0a8321df1ab",
+        "reportUrl" : "https://AnikoBorosova.github.io/wdio_with_selenium_standalone/37//#testresult/fafbe0a8321df1ab",
+        "status" : "passed",
+        "time" : {
+          "start" : 1641915231449,
+          "stop" : 1641915235305,
+          "duration" : 3856
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "bda04611f2ee1bfd.json",
+  "parameterValues" : [ "chrome-96.0.4664.110" ]
+}

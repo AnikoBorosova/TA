@@ -1,0 +1,78 @@
+{
+  "uid" : "374d785f4d25ac5b",
+  "name" : "doesn't add any data and validates that the login was unsuccessful",
+  "fullName" : "Test for login process: unsuccessful login - no data.doesn't add any data and validates that the login was unsuccessful",
+  "historyId" : "88f40454768c0afa0f8dacc6c0092a9e",
+  "time" : {
+    "start" : 1641915783970,
+    "stop" : 1641915784967,
+    "duration" : 997
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-1"
+  }, {
+    "name" : "suite",
+    "value" : "Test for login process: unsuccessful login - no data"
+  }, {
+    "name" : "testClass",
+    "value" : "Test for login process: unsuccessful login - no data"
+  }, {
+    "name" : "testMethod",
+    "value" : "doesn't add any data and validates that the login was unsuccessful"
+  }, {
+    "name" : "package",
+    "value" : "Test for login process: unsuccessful login - no data"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-96.0.4664.110"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "485ade23d440f068",
+        "reportUrl" : "https://AnikoBorosova.github.io/wdio_with_selenium_standalone/37//#testresult/485ade23d440f068",
+        "status" : "passed",
+        "time" : {
+          "start" : 1641915260406,
+          "stop" : 1641915261316,
+          "duration" : 910
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "374d785f4d25ac5b.json",
+  "parameterValues" : [ "chrome-96.0.4664.110" ]
+}

@@ -1,0 +1,78 @@
+{
+  "uid" : "5eb8ca5373e99313",
+  "name" : "proceeds to 'Cart summary' page and validates the chosen item in cart",
+  "fullName" : "Test for basic item purchase process.proceeds to 'Cart summary' page and validates the chosen item in cart",
+  "historyId" : "9871ddcbe39ca69b95647817160b2822",
+  "time" : {
+    "start" : 1641915822930,
+    "stop" : 1641915826950,
+    "duration" : 4020
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "1-2"
+  }, {
+    "name" : "suite",
+    "value" : "Test for basic item purchase process"
+  }, {
+    "name" : "testClass",
+    "value" : "Test for basic item purchase process"
+  }, {
+    "name" : "testMethod",
+    "value" : "proceeds to 'Cart summary' page and validates the chosen item in cart"
+  }, {
+    "name" : "package",
+    "value" : "Test for basic item purchase process"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "firefox-95.0"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "bcd38522c5f4ea5a",
+        "reportUrl" : "https://AnikoBorosova.github.io/wdio_with_selenium_standalone/37//#testresult/bcd38522c5f4ea5a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1641915266558,
+          "stop" : 1641915268085,
+          "duration" : 1527
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "5eb8ca5373e99313.json",
+  "parameterValues" : [ "firefox-95.0" ]
+}

@@ -1,0 +1,78 @@
+{
+  "uid" : "82f7f78fa353eeb8",
+  "name" : "proceeds to 'Shipping' page and checks page headline",
+  "fullName" : "Test for basic item purchase process.proceeds to 'Shipping' page and checks page headline",
+  "historyId" : "c94d667c8d7ded8d78824402a5e2cab4",
+  "time" : {
+    "start" : 1641915832525,
+    "stop" : 1641915834571,
+    "duration" : 2046
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "1-2"
+  }, {
+    "name" : "suite",
+    "value" : "Test for basic item purchase process"
+  }, {
+    "name" : "testClass",
+    "value" : "Test for basic item purchase process"
+  }, {
+    "name" : "testMethod",
+    "value" : "proceeds to 'Shipping' page and checks page headline"
+  }, {
+    "name" : "package",
+    "value" : "Test for basic item purchase process"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "firefox-95.0"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "6349344e8803084e",
+        "reportUrl" : "https://AnikoBorosova.github.io/wdio_with_selenium_standalone/37//#testresult/6349344e8803084e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1641915271790,
+          "stop" : 1641915273002,
+          "duration" : 1212
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "82f7f78fa353eeb8.json",
+  "parameterValues" : [ "firefox-95.0" ]
+}

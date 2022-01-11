@@ -1,0 +1,78 @@
+{
+  "uid" : "a2b20a948beef125",
+  "name" : "creates account and check if it proceeds to registration form",
+  "fullName" : "Test for registration process: successful registration.creates account and check if it proceeds to registration form",
+  "historyId" : "d2f37f7ec4bf0ebcc2e83489355bab5b",
+  "time" : {
+    "start" : 1641915805830,
+    "stop" : 1641915807919,
+    "duration" : 2089
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "1-0"
+  }, {
+    "name" : "suite",
+    "value" : "Test for registration process: successful registration"
+  }, {
+    "name" : "testClass",
+    "value" : "Test for registration process: successful registration"
+  }, {
+    "name" : "testMethod",
+    "value" : "creates account and check if it proceeds to registration form"
+  }, {
+    "name" : "package",
+    "value" : "Test for registration process: successful registration"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "firefox-95.0"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "7d01554e8d207b0f",
+        "reportUrl" : "https://AnikoBorosova.github.io/wdio_with_selenium_standalone/37//#testresult/7d01554e8d207b0f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1641915277982,
+          "stop" : 1641915280500,
+          "duration" : 2518
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "a2b20a948beef125.json",
+  "parameterValues" : [ "firefox-95.0" ]
+}

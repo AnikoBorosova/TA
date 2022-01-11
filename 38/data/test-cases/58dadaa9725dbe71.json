@@ -1,0 +1,78 @@
+{
+  "uid" : "58dadaa9725dbe71",
+  "name" : "\"before all\" hook",
+  "fullName" : "Test for login process.\"before all\" hook",
+  "historyId" : "5c89fd9ddda48f10b4410cd90e83dcb3",
+  "time" : {
+    "start" : 1641915783752,
+    "stop" : 1641915787738,
+    "duration" : 3986
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "1-1"
+  }, {
+    "name" : "suite",
+    "value" : "Test for login process"
+  }, {
+    "name" : "testClass",
+    "value" : "Test for login process"
+  }, {
+    "name" : "testMethod",
+    "value" : "\"before all\" hook"
+  }, {
+    "name" : "package",
+    "value" : "Test for login process"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "firefox-95.0"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "a4830d255651b902",
+        "reportUrl" : "https://AnikoBorosova.github.io/wdio_with_selenium_standalone/37//#testresult/a4830d255651b902",
+        "status" : "passed",
+        "time" : {
+          "start" : 1641915287253,
+          "stop" : 1641915289444,
+          "duration" : 2191
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "58dadaa9725dbe71.json",
+  "parameterValues" : [ "firefox-95.0" ]
+}

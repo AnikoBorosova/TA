@@ -1,0 +1,78 @@
+{
+  "uid" : "8ec6b2f986b5a41",
+  "name" : "\"before all\" hook",
+  "fullName" : "Test for basic item purchase process.\"before all\" hook",
+  "historyId" : "ca4bff09c153e24bed4150661c1d7221",
+  "time" : {
+    "start" : 1641915814357,
+    "stop" : 1641915820241,
+    "duration" : 5884
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "1-2"
+  }, {
+    "name" : "suite",
+    "value" : "Test for basic item purchase process"
+  }, {
+    "name" : "testClass",
+    "value" : "Test for basic item purchase process"
+  }, {
+    "name" : "testMethod",
+    "value" : "\"before all\" hook"
+  }, {
+    "name" : "package",
+    "value" : "Test for basic item purchase process"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "firefox-95.0"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "6026baef25065a76",
+        "reportUrl" : "https://AnikoBorosova.github.io/wdio_with_selenium_standalone/37//#testresult/6026baef25065a76",
+        "status" : "passed",
+        "time" : {
+          "start" : 1641915260560,
+          "stop" : 1641915264637,
+          "duration" : 4077
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "8ec6b2f986b5a41.json",
+  "parameterValues" : [ "firefox-95.0" ]
+}

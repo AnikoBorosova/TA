@@ -1,0 +1,78 @@
+{
+  "uid" : "1f19f6322783f1ad",
+  "name" : "doesn't add any data and validates that the login was unsuccessful",
+  "fullName" : "Test for login process: unsuccessful login - no data.doesn't add any data and validates that the login was unsuccessful",
+  "historyId" : "431e1f4d59a249e21617c3e354d7099",
+  "time" : {
+    "start" : 1641915789735,
+    "stop" : 1641915790612,
+    "duration" : 877
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "1-1"
+  }, {
+    "name" : "suite",
+    "value" : "Test for login process: unsuccessful login - no data"
+  }, {
+    "name" : "testClass",
+    "value" : "Test for login process: unsuccessful login - no data"
+  }, {
+    "name" : "testMethod",
+    "value" : "doesn't add any data and validates that the login was unsuccessful"
+  }, {
+    "name" : "package",
+    "value" : "Test for login process: unsuccessful login - no data"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "firefox-95.0"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "6a4426bcfdab0337",
+        "reportUrl" : "https://AnikoBorosova.github.io/wdio_with_selenium_standalone/37//#testresult/6a4426bcfdab0337",
+        "status" : "passed",
+        "time" : {
+          "start" : 1641915290786,
+          "stop" : 1641915291586,
+          "duration" : 800
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "1f19f6322783f1ad.json",
+  "parameterValues" : [ "firefox-95.0" ]
+}

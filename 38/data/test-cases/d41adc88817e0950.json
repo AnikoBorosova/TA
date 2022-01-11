@@ -1,0 +1,78 @@
+{
+  "uid" : "d41adc88817e0950",
+  "name" : "adds correct registration data and validates that the registration was successful",
+  "fullName" : "Test for registration process: successful registration.adds correct registration data and validates that the registration was successful",
+  "historyId" : "ee7305e2d39bccfa86dc55fcb28bd888",
+  "time" : {
+    "start" : 1641915829123,
+    "stop" : 1641915834494,
+    "duration" : 5371
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Test for registration process: successful registration"
+  }, {
+    "name" : "testClass",
+    "value" : "Test for registration process: successful registration"
+  }, {
+    "name" : "testMethod",
+    "value" : "adds correct registration data and validates that the registration was successful"
+  }, {
+    "name" : "package",
+    "value" : "Test for registration process: successful registration"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-96.0.4664.110"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "333b7f9f1f73b4f5",
+        "reportUrl" : "https://AnikoBorosova.github.io/wdio_with_selenium_standalone/37//#testresult/333b7f9f1f73b4f5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1641915240503,
+          "stop" : 1641915245110,
+          "duration" : 4607
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "d41adc88817e0950.json",
+  "parameterValues" : [ "chrome-96.0.4664.110" ]
+}

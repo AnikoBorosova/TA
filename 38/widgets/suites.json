@@ -1,0 +1,92 @@
+{
+  "total" : 8,
+  "items" : [ {
+    "uid" : "55bc2a491579bc2daa8ffd5ae2d948bd",
+    "name" : "Test for basic item purchase process",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 14,
+      "unknown" : 0,
+      "total" : 14
+    }
+  }, {
+    "uid" : "e6ee17ad582f38c54a1a0b59e2a8b7ac",
+    "name" : "Test for registration process: successful registration",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 6,
+      "unknown" : 0,
+      "total" : 6
+    }
+  }, {
+    "uid" : "b7fc4b110e76253ba2ecea0f4c504a87",
+    "name" : "Test for login process: unsuccessful login - no data",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 4,
+      "unknown" : 0,
+      "total" : 4
+    }
+  }, {
+    "uid" : "e45755bb9677b702a8cef43cd854d022",
+    "name" : "Test for login process",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    }
+  }, {
+    "uid" : "8aabb91ed3cc06fd5b6078ed40a86265",
+    "name" : "Test for login process: unsuccessful login - incorrect email address",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    }
+  }, {
+    "uid" : "50964d70dcd8099c608341d6d2ec6f02",
+    "name" : "Test for login process: unsuccessful login - incorrect password",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    }
+  }, {
+    "uid" : "67178ee3e250dfb4e07cf44c93ead961",
+    "name" : "Test for login process: successful login",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    }
+  }, {
+    "uid" : "117be7d123a510b6e2cd170e90494ab1",
+    "name" : "Test for registration process",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    }
+  } ]
+}

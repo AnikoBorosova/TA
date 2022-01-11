@@ -1,0 +1,78 @@
+{
+  "uid" : "5aa6db11e22d159f",
+  "name" : "creates account and check if it proceeds to registration form",
+  "fullName" : "Test for registration process: successful registration.creates account and check if it proceeds to registration form",
+  "historyId" : "450e3bd5328c3e38cf31394e88ad416c",
+  "time" : {
+    "start" : 1641915826716,
+    "stop" : 1641915829123,
+    "duration" : 2407
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Test for registration process: successful registration"
+  }, {
+    "name" : "testClass",
+    "value" : "Test for registration process: successful registration"
+  }, {
+    "name" : "testMethod",
+    "value" : "creates account and check if it proceeds to registration form"
+  }, {
+    "name" : "package",
+    "value" : "Test for registration process: successful registration"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-96.0.4664.110"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "7451cc8a601b58bd",
+        "reportUrl" : "https://AnikoBorosova.github.io/wdio_with_selenium_standalone/37//#testresult/7451cc8a601b58bd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1641915237585,
+          "stop" : 1641915240503,
+          "duration" : 2918
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "5aa6db11e22d159f.json",
+  "parameterValues" : [ "chrome-96.0.4664.110" ]
+}

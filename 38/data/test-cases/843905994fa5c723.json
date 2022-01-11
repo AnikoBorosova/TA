@@ -1,0 +1,78 @@
+{
+  "uid" : "843905994fa5c723",
+  "name" : "adds incorrect data (email) and validates that the login was unsuccessful",
+  "fullName" : "Test for login process: unsuccessful login - incorrect email address.adds incorrect data (email) and validates that the login was unsuccessful",
+  "historyId" : "8e196aa320c05e054d10e23c0f2f1cbc",
+  "time" : {
+    "start" : 1641915790620,
+    "stop" : 1641915791936,
+    "duration" : 1316
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "1-1"
+  }, {
+    "name" : "suite",
+    "value" : "Test for login process: unsuccessful login - incorrect email address"
+  }, {
+    "name" : "testClass",
+    "value" : "Test for login process: unsuccessful login - incorrect email address"
+  }, {
+    "name" : "testMethod",
+    "value" : "adds incorrect data (email) and validates that the login was unsuccessful"
+  }, {
+    "name" : "package",
+    "value" : "Test for login process: unsuccessful login - incorrect email address"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "firefox-95.0"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "356280802df67b52",
+        "reportUrl" : "https://AnikoBorosova.github.io/wdio_with_selenium_standalone/37//#testresult/356280802df67b52",
+        "status" : "passed",
+        "time" : {
+          "start" : 1641915291603,
+          "stop" : 1641915292618,
+          "duration" : 1015
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "843905994fa5c723.json",
+  "parameterValues" : [ "firefox-95.0" ]
+}

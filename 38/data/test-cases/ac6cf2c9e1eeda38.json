@@ -1,0 +1,78 @@
+{
+  "uid" : "ac6cf2c9e1eeda38",
+  "name" : "confirms order and checks 'Confirmation' page headline",
+  "fullName" : "Test for basic item purchase process.confirms order and checks 'Confirmation' page headline",
+  "historyId" : "73ba3edd916d4f2024835de01fdfdb17",
+  "time" : {
+    "start" : 1641915809090,
+    "stop" : 1641915813453,
+    "duration" : 4363
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-2"
+  }, {
+    "name" : "suite",
+    "value" : "Test for basic item purchase process"
+  }, {
+    "name" : "testClass",
+    "value" : "Test for basic item purchase process"
+  }, {
+    "name" : "testMethod",
+    "value" : "confirms order and checks 'Confirmation' page headline"
+  }, {
+    "name" : "package",
+    "value" : "Test for basic item purchase process"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-96.0.4664.110"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "c44720136e5604ed",
+        "reportUrl" : "https://AnikoBorosova.github.io/wdio_with_selenium_standalone/37//#testresult/c44720136e5604ed",
+        "status" : "passed",
+        "time" : {
+          "start" : 1641915248739,
+          "stop" : 1641915251389,
+          "duration" : 2650
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "ac6cf2c9e1eeda38.json",
+  "parameterValues" : [ "chrome-96.0.4664.110" ]
+}

@@ -1,0 +1,78 @@
+{
+  "uid" : "4a210f05274ad6bf",
+  "name" : "adds correct registration data and validates that the registration was successful",
+  "fullName" : "Test for registration process: successful registration.adds correct registration data and validates that the registration was successful",
+  "historyId" : "7e51969edb9507c0c576f83860a2bee7",
+  "time" : {
+    "start" : 1641915807919,
+    "stop" : 1641915811661,
+    "duration" : 3742
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "1-0"
+  }, {
+    "name" : "suite",
+    "value" : "Test for registration process: successful registration"
+  }, {
+    "name" : "testClass",
+    "value" : "Test for registration process: successful registration"
+  }, {
+    "name" : "testMethod",
+    "value" : "adds correct registration data and validates that the registration was successful"
+  }, {
+    "name" : "package",
+    "value" : "Test for registration process: successful registration"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "firefox-95.0"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "48a68a4fb6c1920c",
+        "reportUrl" : "https://AnikoBorosova.github.io/wdio_with_selenium_standalone/37//#testresult/48a68a4fb6c1920c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1641915280500,
+          "stop" : 1641915282980,
+          "duration" : 2480
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "4a210f05274ad6bf.json",
+  "parameterValues" : [ "firefox-95.0" ]
+}

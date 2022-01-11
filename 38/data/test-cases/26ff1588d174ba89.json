@@ -1,0 +1,78 @@
+{
+  "uid" : "26ff1588d174ba89",
+  "name" : "adds incorrect data (email) and validates that the login was unsuccessful",
+  "fullName" : "Test for login process: unsuccessful login - incorrect email address.adds incorrect data (email) and validates that the login was unsuccessful",
+  "historyId" : "9efbc9ace65550ade3cbe7d76e4afbcc",
+  "time" : {
+    "start" : 1641915784976,
+    "stop" : 1641915786182,
+    "duration" : 1206
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-1"
+  }, {
+    "name" : "suite",
+    "value" : "Test for login process: unsuccessful login - incorrect email address"
+  }, {
+    "name" : "testClass",
+    "value" : "Test for login process: unsuccessful login - incorrect email address"
+  }, {
+    "name" : "testMethod",
+    "value" : "adds incorrect data (email) and validates that the login was unsuccessful"
+  }, {
+    "name" : "package",
+    "value" : "Test for login process: unsuccessful login - incorrect email address"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-96.0.4664.110"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "b913671bea679737",
+        "reportUrl" : "https://AnikoBorosova.github.io/wdio_with_selenium_standalone/37//#testresult/b913671bea679737",
+        "status" : "passed",
+        "time" : {
+          "start" : 1641915261325,
+          "stop" : 1641915263256,
+          "duration" : 1931
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "26ff1588d174ba89.json",
+  "parameterValues" : [ "chrome-96.0.4664.110" ]
+}

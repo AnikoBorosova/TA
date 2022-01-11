@@ -1,0 +1,479 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "children" : [ {
+    "name" : "Test for login process",
+    "children" : [ {
+      "name" : "\"before all\" hook",
+      "uid" : "e351f820315e8c3b",
+      "parentUid" : "e45755bb9677b702a8cef43cd854d022",
+      "status" : "passed",
+      "time" : {
+        "start" : 1641915778729,
+        "stop" : 1641915782447,
+        "duration" : 3718
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-96.0.4664.110" ]
+    }, {
+      "name" : "\"before all\" hook",
+      "uid" : "58dadaa9725dbe71",
+      "parentUid" : "e45755bb9677b702a8cef43cd854d022",
+      "status" : "passed",
+      "time" : {
+        "start" : 1641915783752,
+        "stop" : 1641915787738,
+        "duration" : 3986
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "firefox-95.0" ]
+    } ],
+    "uid" : "e45755bb9677b702a8cef43cd854d022"
+  }, {
+    "name" : "Test for login process: unsuccessful login - no data",
+    "children" : [ {
+      "name" : "navigates to 'Sign in'page and checks if it opens",
+      "uid" : "747911323d30ef30",
+      "parentUid" : "b7fc4b110e76253ba2ecea0f4c504a87",
+      "status" : "passed",
+      "time" : {
+        "start" : 1641915782448,
+        "stop" : 1641915783970,
+        "duration" : 1522
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-96.0.4664.110" ]
+    }, {
+      "name" : "doesn't add any data and validates that the login was unsuccessful",
+      "uid" : "374d785f4d25ac5b",
+      "parentUid" : "b7fc4b110e76253ba2ecea0f4c504a87",
+      "status" : "passed",
+      "time" : {
+        "start" : 1641915783970,
+        "stop" : 1641915784967,
+        "duration" : 997
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-96.0.4664.110" ]
+    }, {
+      "name" : "navigates to 'Sign in'page and checks if it opens",
+      "uid" : "4268dee5fbdbb390",
+      "parentUid" : "b7fc4b110e76253ba2ecea0f4c504a87",
+      "status" : "passed",
+      "time" : {
+        "start" : 1641915787739,
+        "stop" : 1641915789735,
+        "duration" : 1996
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "firefox-95.0" ]
+    }, {
+      "name" : "doesn't add any data and validates that the login was unsuccessful",
+      "uid" : "1f19f6322783f1ad",
+      "parentUid" : "b7fc4b110e76253ba2ecea0f4c504a87",
+      "status" : "passed",
+      "time" : {
+        "start" : 1641915789735,
+        "stop" : 1641915790612,
+        "duration" : 877
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "firefox-95.0" ]
+    } ],
+    "uid" : "b7fc4b110e76253ba2ecea0f4c504a87"
+  }, {
+    "name" : "Test for login process: unsuccessful login - incorrect email address",
+    "children" : [ {
+      "name" : "adds incorrect data (email) and validates that the login was unsuccessful",
+      "uid" : "26ff1588d174ba89",
+      "parentUid" : "8aabb91ed3cc06fd5b6078ed40a86265",
+      "status" : "passed",
+      "time" : {
+        "start" : 1641915784976,
+        "stop" : 1641915786182,
+        "duration" : 1206
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-96.0.4664.110" ]
+    }, {
+      "name" : "adds incorrect data (email) and validates that the login was unsuccessful",
+      "uid" : "843905994fa5c723",
+      "parentUid" : "8aabb91ed3cc06fd5b6078ed40a86265",
+      "status" : "passed",
+      "time" : {
+        "start" : 1641915790620,
+        "stop" : 1641915791936,
+        "duration" : 1316
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "firefox-95.0" ]
+    } ],
+    "uid" : "8aabb91ed3cc06fd5b6078ed40a86265"
+  }, {
+    "name" : "Test for login process: unsuccessful login - incorrect password",
+    "children" : [ {
+      "name" : "adds incorrect data (password) and validates that the login was unsuccessful",
+      "uid" : "b922e4ed69eade7f",
+      "parentUid" : "50964d70dcd8099c608341d6d2ec6f02",
+      "status" : "passed",
+      "time" : {
+        "start" : 1641915786183,
+        "stop" : 1641915787252,
+        "duration" : 1069
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-96.0.4664.110" ]
+    }, {
+      "name" : "adds incorrect data (password) and validates that the login was unsuccessful",
+      "uid" : "d61da008d0c3f2b1",
+      "parentUid" : "50964d70dcd8099c608341d6d2ec6f02",
+      "status" : "passed",
+      "time" : {
+        "start" : 1641915791938,
+        "stop" : 1641915794042,
+        "duration" : 2104
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "firefox-95.0" ]
+    } ],
+    "uid" : "50964d70dcd8099c608341d6d2ec6f02"
+  }, {
+    "name" : "Test for login process: successful login",
+    "children" : [ {
+      "name" : "logs in with correct data and validates that the process was successful",
+      "uid" : "3e2dfcf9b2d6307b",
+      "parentUid" : "67178ee3e250dfb4e07cf44c93ead961",
+      "status" : "passed",
+      "time" : {
+        "start" : 1641915787255,
+        "stop" : 1641915789306,
+        "duration" : 2051
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-96.0.4664.110" ]
+    }, {
+      "name" : "logs in with correct data and validates that the process was successful",
+      "uid" : "2e9b787b98a8b2c4",
+      "parentUid" : "67178ee3e250dfb4e07cf44c93ead961",
+      "status" : "passed",
+      "time" : {
+        "start" : 1641915794045,
+        "stop" : 1641915796074,
+        "duration" : 2029
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "firefox-95.0" ]
+    } ],
+    "uid" : "67178ee3e250dfb4e07cf44c93ead961"
+  }, {
+    "name" : "Test for basic item purchase process",
+    "children" : [ {
+      "name" : "\"before all\" hook",
+      "uid" : "7ef36f7ba4f2f243",
+      "parentUid" : "55bc2a491579bc2daa8ffd5ae2d948bd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1641915792562,
+        "stop" : 1641915796954,
+        "duration" : 4392
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-96.0.4664.110" ]
+    }, {
+      "name" : "adds an item to the cart and checks if it was successful",
+      "uid" : "bfe20ca9b6409401",
+      "parentUid" : "55bc2a491579bc2daa8ffd5ae2d948bd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1641915796954,
+        "stop" : 1641915798141,
+        "duration" : 1187
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-96.0.4664.110" ]
+    }, {
+      "name" : "proceeds to 'Cart summary' page and validates the chosen item in cart",
+      "uid" : "6d061991f32129e6",
+      "parentUid" : "55bc2a491579bc2daa8ffd5ae2d948bd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1641915798141,
+        "stop" : 1641915799585,
+        "duration" : 1444
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-96.0.4664.110" ]
+    }, {
+      "name" : "Logs in with credentials and proceeds to 'Addresses' page",
+      "uid" : "745fcef3aa63fc1",
+      "parentUid" : "55bc2a491579bc2daa8ffd5ae2d948bd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1641915799585,
+        "stop" : 1641915805086,
+        "duration" : 5501
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-96.0.4664.110" ]
+    }, {
+      "name" : "proceeds to 'Shipping' page and checks page headline",
+      "uid" : "35a90fbdd1698119",
+      "parentUid" : "55bc2a491579bc2daa8ffd5ae2d948bd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1641915805087,
+        "stop" : 1641915806218,
+        "duration" : 1131
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-96.0.4664.110" ]
+    }, {
+      "name" : "proceeds to payment, chooses payment method and proceeds to 'Order summary' page",
+      "uid" : "924ec02d09e66154",
+      "parentUid" : "55bc2a491579bc2daa8ffd5ae2d948bd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1641915806218,
+        "stop" : 1641915809090,
+        "duration" : 2872
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-96.0.4664.110" ]
+    }, {
+      "name" : "confirms order and checks 'Confirmation' page headline",
+      "uid" : "ac6cf2c9e1eeda38",
+      "parentUid" : "55bc2a491579bc2daa8ffd5ae2d948bd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1641915809090,
+        "stop" : 1641915813453,
+        "duration" : 4363
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-96.0.4664.110" ]
+    }, {
+      "name" : "\"before all\" hook",
+      "uid" : "8ec6b2f986b5a41",
+      "parentUid" : "55bc2a491579bc2daa8ffd5ae2d948bd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1641915814357,
+        "stop" : 1641915820241,
+        "duration" : 5884
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "firefox-95.0" ]
+    }, {
+      "name" : "adds an item to the cart and checks if it was successful",
+      "uid" : "dabfe1652aadeda1",
+      "parentUid" : "55bc2a491579bc2daa8ffd5ae2d948bd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1641915820242,
+        "stop" : 1641915822929,
+        "duration" : 2687
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "firefox-95.0" ]
+    }, {
+      "name" : "proceeds to 'Cart summary' page and validates the chosen item in cart",
+      "uid" : "5eb8ca5373e99313",
+      "parentUid" : "55bc2a491579bc2daa8ffd5ae2d948bd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1641915822930,
+        "stop" : 1641915826950,
+        "duration" : 4020
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "firefox-95.0" ]
+    }, {
+      "name" : "Logs in with credentials and proceeds to 'Addresses' page",
+      "uid" : "1d9533b44ea88bf0",
+      "parentUid" : "55bc2a491579bc2daa8ffd5ae2d948bd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1641915826952,
+        "stop" : 1641915832523,
+        "duration" : 5571
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "firefox-95.0" ]
+    }, {
+      "name" : "proceeds to 'Shipping' page and checks page headline",
+      "uid" : "82f7f78fa353eeb8",
+      "parentUid" : "55bc2a491579bc2daa8ffd5ae2d948bd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1641915832525,
+        "stop" : 1641915834571,
+        "duration" : 2046
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "firefox-95.0" ]
+    }, {
+      "name" : "proceeds to payment, chooses payment method and proceeds to 'Order summary' page",
+      "uid" : "ec11c19a987b1e0e",
+      "parentUid" : "55bc2a491579bc2daa8ffd5ae2d948bd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1641915834571,
+        "stop" : 1641915837392,
+        "duration" : 2821
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "firefox-95.0" ]
+    }, {
+      "name" : "confirms order and checks 'Confirmation' page headline",
+      "uid" : "765df66c2856540e",
+      "parentUid" : "55bc2a491579bc2daa8ffd5ae2d948bd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1641915837392,
+        "stop" : 1641915840533,
+        "duration" : 3141
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "firefox-95.0" ]
+    } ],
+    "uid" : "55bc2a491579bc2daa8ffd5ae2d948bd"
+  }, {
+    "name" : "Test for registration process",
+    "children" : [ {
+      "name" : "\"before all\" hook",
+      "uid" : "a7b376409cbbcc53",
+      "parentUid" : "117be7d123a510b6e2cd170e90494ab1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1641915799497,
+        "stop" : 1641915804194,
+        "duration" : 4697
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "firefox-95.0" ]
+    }, {
+      "name" : "\"before all\" hook",
+      "uid" : "bda04611f2ee1bfd",
+      "parentUid" : "117be7d123a510b6e2cd170e90494ab1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1641915817594,
+        "stop" : 1641915821603,
+        "duration" : 4009
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-96.0.4664.110" ]
+    } ],
+    "uid" : "117be7d123a510b6e2cd170e90494ab1"
+  }, {
+    "name" : "Test for registration process: successful registration",
+    "children" : [ {
+      "name" : "navigates to 'Sign in'page and checks if it opens",
+      "uid" : "e73cc2ee1c1a4c78",
+      "parentUid" : "e6ee17ad582f38c54a1a0b59e2a8b7ac",
+      "status" : "passed",
+      "time" : {
+        "start" : 1641915804195,
+        "stop" : 1641915805830,
+        "duration" : 1635
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "firefox-95.0" ]
+    }, {
+      "name" : "creates account and check if it proceeds to registration form",
+      "uid" : "a2b20a948beef125",
+      "parentUid" : "e6ee17ad582f38c54a1a0b59e2a8b7ac",
+      "status" : "passed",
+      "time" : {
+        "start" : 1641915805830,
+        "stop" : 1641915807919,
+        "duration" : 2089
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "firefox-95.0" ]
+    }, {
+      "name" : "adds correct registration data and validates that the registration was successful",
+      "uid" : "4a210f05274ad6bf",
+      "parentUid" : "e6ee17ad582f38c54a1a0b59e2a8b7ac",
+      "status" : "passed",
+      "time" : {
+        "start" : 1641915807919,
+        "stop" : 1641915811661,
+        "duration" : 3742
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "firefox-95.0" ]
+    }, {
+      "name" : "navigates to 'Sign in'page and checks if it opens",
+      "uid" : "412a159140b88579",
+      "parentUid" : "e6ee17ad582f38c54a1a0b59e2a8b7ac",
+      "status" : "passed",
+      "time" : {
+        "start" : 1641915821605,
+        "stop" : 1641915826715,
+        "duration" : 5110
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-96.0.4664.110" ]
+    }, {
+      "name" : "creates account and check if it proceeds to registration form",
+      "uid" : "5aa6db11e22d159f",
+      "parentUid" : "e6ee17ad582f38c54a1a0b59e2a8b7ac",
+      "status" : "passed",
+      "time" : {
+        "start" : 1641915826716,
+        "stop" : 1641915829123,
+        "duration" : 2407
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-96.0.4664.110" ]
+    }, {
+      "name" : "adds correct registration data and validates that the registration was successful",
+      "uid" : "d41adc88817e0950",
+      "parentUid" : "e6ee17ad582f38c54a1a0b59e2a8b7ac",
+      "status" : "passed",
+      "time" : {
+        "start" : 1641915829123,
+        "stop" : 1641915834494,
+        "duration" : 5371
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-96.0.4664.110" ]
+    } ],
+    "uid" : "e6ee17ad582f38c54a1a0b59e2a8b7ac"
+  } ],
+  "name" : "suites"
+}

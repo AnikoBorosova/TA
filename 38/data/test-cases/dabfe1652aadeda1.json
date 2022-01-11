@@ -1,0 +1,78 @@
+{
+  "uid" : "dabfe1652aadeda1",
+  "name" : "adds an item to the cart and checks if it was successful",
+  "fullName" : "Test for basic item purchase process.adds an item to the cart and checks if it was successful",
+  "historyId" : "8312ce6b880e4757e77fb535f8846097",
+  "time" : {
+    "start" : 1641915820242,
+    "stop" : 1641915822929,
+    "duration" : 2687
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "1-2"
+  }, {
+    "name" : "suite",
+    "value" : "Test for basic item purchase process"
+  }, {
+    "name" : "testClass",
+    "value" : "Test for basic item purchase process"
+  }, {
+    "name" : "testMethod",
+    "value" : "adds an item to the cart and checks if it was successful"
+  }, {
+    "name" : "package",
+    "value" : "Test for basic item purchase process"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "firefox-95.0"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "6abc6299aa14841",
+        "reportUrl" : "https://AnikoBorosova.github.io/wdio_with_selenium_standalone/37//#testresult/6abc6299aa14841",
+        "status" : "passed",
+        "time" : {
+          "start" : 1641915264642,
+          "stop" : 1641915266557,
+          "duration" : 1915
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "dabfe1652aadeda1.json",
+  "parameterValues" : [ "firefox-95.0" ]
+}

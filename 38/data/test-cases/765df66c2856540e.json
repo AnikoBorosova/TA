@@ -1,0 +1,78 @@
+{
+  "uid" : "765df66c2856540e",
+  "name" : "confirms order and checks 'Confirmation' page headline",
+  "fullName" : "Test for basic item purchase process.confirms order and checks 'Confirmation' page headline",
+  "historyId" : "a5c6a590cce82c146e5a9f8cb52744ef",
+  "time" : {
+    "start" : 1641915837392,
+    "stop" : 1641915840533,
+    "duration" : 3141
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "1-2"
+  }, {
+    "name" : "suite",
+    "value" : "Test for basic item purchase process"
+  }, {
+    "name" : "testClass",
+    "value" : "Test for basic item purchase process"
+  }, {
+    "name" : "testMethod",
+    "value" : "confirms order and checks 'Confirmation' page headline"
+  }, {
+    "name" : "package",
+    "value" : "Test for basic item purchase process"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "firefox-95.0"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "f54229ecc66e45c2",
+        "reportUrl" : "https://AnikoBorosova.github.io/wdio_with_selenium_standalone/37//#testresult/f54229ecc66e45c2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1641915275978,
+          "stop" : 1641915279120,
+          "duration" : 3142
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "765df66c2856540e.json",
+  "parameterValues" : [ "firefox-95.0" ]
+}

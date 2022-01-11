@@ -1,0 +1,78 @@
+{
+  "uid" : "6d061991f32129e6",
+  "name" : "proceeds to 'Cart summary' page and validates the chosen item in cart",
+  "fullName" : "Test for basic item purchase process.proceeds to 'Cart summary' page and validates the chosen item in cart",
+  "historyId" : "98d3924515617db9595bad3e352672d",
+  "time" : {
+    "start" : 1641915798141,
+    "stop" : 1641915799585,
+    "duration" : 1444
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-2"
+  }, {
+    "name" : "suite",
+    "value" : "Test for basic item purchase process"
+  }, {
+    "name" : "testClass",
+    "value" : "Test for basic item purchase process"
+  }, {
+    "name" : "testMethod",
+    "value" : "proceeds to 'Cart summary' page and validates the chosen item in cart"
+  }, {
+    "name" : "package",
+    "value" : "Test for basic item purchase process"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-96.0.4664.110"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "9d8c29e2d5c9480c",
+        "reportUrl" : "https://AnikoBorosova.github.io/wdio_with_selenium_standalone/37//#testresult/9d8c29e2d5c9480c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1641915237238,
+          "stop" : 1641915238889,
+          "duration" : 1651
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "6d061991f32129e6.json",
+  "parameterValues" : [ "chrome-96.0.4664.110" ]
+}

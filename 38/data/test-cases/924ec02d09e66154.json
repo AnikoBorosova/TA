@@ -1,0 +1,78 @@
+{
+  "uid" : "924ec02d09e66154",
+  "name" : "proceeds to payment, chooses payment method and proceeds to 'Order summary' page",
+  "fullName" : "Test for basic item purchase process.proceeds to payment, chooses payment method and proceeds to 'Order summary' page",
+  "historyId" : "6023d944b91b05f36acc17da33cd1c28",
+  "time" : {
+    "start" : 1641915806218,
+    "stop" : 1641915809090,
+    "duration" : 2872
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-2"
+  }, {
+    "name" : "suite",
+    "value" : "Test for basic item purchase process"
+  }, {
+    "name" : "testClass",
+    "value" : "Test for basic item purchase process"
+  }, {
+    "name" : "testMethod",
+    "value" : "proceeds to payment, chooses payment method and proceeds to 'Order summary' page"
+  }, {
+    "name" : "package",
+    "value" : "Test for basic item purchase process"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-96.0.4664.110"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "bebc2eba86297323",
+        "reportUrl" : "https://AnikoBorosova.github.io/wdio_with_selenium_standalone/37//#testresult/bebc2eba86297323",
+        "status" : "passed",
+        "time" : {
+          "start" : 1641915245865,
+          "stop" : 1641915248739,
+          "duration" : 2874
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "924ec02d09e66154.json",
+  "parameterValues" : [ "chrome-96.0.4664.110" ]
+}
