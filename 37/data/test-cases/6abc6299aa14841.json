@@ -1,0 +1,58 @@
+{
+  "uid" : "6abc6299aa14841",
+  "name" : "adds an item to the cart and checks if it was successful",
+  "fullName" : "Test for basic item purchase process.adds an item to the cart and checks if it was successful",
+  "historyId" : "8312ce6b880e4757e77fb535f8846097",
+  "time" : {
+    "start" : 1641915264642,
+    "stop" : 1641915266557,
+    "duration" : 1915
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "1-2"
+  }, {
+    "name" : "suite",
+    "value" : "Test for basic item purchase process"
+  }, {
+    "name" : "testClass",
+    "value" : "Test for basic item purchase process"
+  }, {
+    "name" : "testMethod",
+    "value" : "adds an item to the cart and checks if it was successful"
+  }, {
+    "name" : "package",
+    "value" : "Test for basic item purchase process"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "firefox-95.0"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "6abc6299aa14841.json",
+  "parameterValues" : [ "firefox-95.0" ]
+}

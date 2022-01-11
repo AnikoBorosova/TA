@@ -1,0 +1,58 @@
+{
+  "uid" : "4aa98633a3c7273f",
+  "name" : "Logs in with credentials and proceeds to 'Addresses' page",
+  "fullName" : "Test for basic item purchase process.Logs in with credentials and proceeds to 'Addresses' page",
+  "historyId" : "809344e9e2e02b2cf8a57e0f127164ba",
+  "time" : {
+    "start" : 1641915268086,
+    "stop" : 1641915271755,
+    "duration" : 3669
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "1-2"
+  }, {
+    "name" : "suite",
+    "value" : "Test for basic item purchase process"
+  }, {
+    "name" : "testClass",
+    "value" : "Test for basic item purchase process"
+  }, {
+    "name" : "testMethod",
+    "value" : "Logs in with credentials and proceeds to 'Addresses' page"
+  }, {
+    "name" : "package",
+    "value" : "Test for basic item purchase process"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "firefox-95.0"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4aa98633a3c7273f.json",
+  "parameterValues" : [ "firefox-95.0" ]
+}

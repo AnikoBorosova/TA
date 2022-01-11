@@ -1,0 +1,58 @@
+{
+  "uid" : "bebc2eba86297323",
+  "name" : "proceeds to payment, chooses payment method and proceeds to 'Order summary' page",
+  "fullName" : "Test for basic item purchase process.proceeds to payment, chooses payment method and proceeds to 'Order summary' page",
+  "historyId" : "6023d944b91b05f36acc17da33cd1c28",
+  "time" : {
+    "start" : 1641915245865,
+    "stop" : 1641915248739,
+    "duration" : 2874
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-2"
+  }, {
+    "name" : "suite",
+    "value" : "Test for basic item purchase process"
+  }, {
+    "name" : "testClass",
+    "value" : "Test for basic item purchase process"
+  }, {
+    "name" : "testMethod",
+    "value" : "proceeds to payment, chooses payment method and proceeds to 'Order summary' page"
+  }, {
+    "name" : "package",
+    "value" : "Test for basic item purchase process"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-96.0.4664.110"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "bebc2eba86297323.json",
+  "parameterValues" : [ "chrome-96.0.4664.110" ]
+}

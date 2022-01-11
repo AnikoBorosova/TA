@@ -1,0 +1,58 @@
+{
+  "uid" : "6f502cf1d5be6591",
+  "name" : "adds an item to the cart and checks if it was successful",
+  "fullName" : "Test for basic item purchase process.adds an item to the cart and checks if it was successful",
+  "historyId" : "2c962d2bb01918c97c222b7f1e2aaedd",
+  "time" : {
+    "start" : 1641915235272,
+    "stop" : 1641915237238,
+    "duration" : 1966
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-2"
+  }, {
+    "name" : "suite",
+    "value" : "Test for basic item purchase process"
+  }, {
+    "name" : "testClass",
+    "value" : "Test for basic item purchase process"
+  }, {
+    "name" : "testMethod",
+    "value" : "adds an item to the cart and checks if it was successful"
+  }, {
+    "name" : "package",
+    "value" : "Test for basic item purchase process"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-96.0.4664.110"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "6f502cf1d5be6591.json",
+  "parameterValues" : [ "chrome-96.0.4664.110" ]
+}
