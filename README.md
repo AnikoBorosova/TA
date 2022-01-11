@@ -243,15 +243,16 @@ There are setter functions in pageObjects that's names do not start with 'do...'
 
 ## Debugging - best practices
 - errors logged during test runs always specify the exact line where the error happens making debugging easier
-- an allure-report is created at the end of each test run on Jenkins. This report shows graphs, statistics and if any error happens, the exact logs and screenshots of the errors. 
+- an allure-report is created at the end of each test run on Jenkins and on GitHub Actions (ubuntu OS only). This report shows graphs, statistics and if any error happens, the exact logs and screenshots of the errors. 
 
     Jenkins stores this report at the `Allure report` section of the given Jenkins-job: `https://path-to-your-jenkins/job/your-jenkins-job/allure/`.
+    GitHub Actions shows this report on gh-pages of the repository: `https://anikoborosova.github.io/wdio_with_selenium_standalone`
 
 - screenshots are made of each error on both Jenkins and GitHub Actions. 
     
     Jenkins stores these images at each build's `Artifacts (Építőkövek)` section as a downloadable asset (e.g.`https://path-to-your-jenkins/job/your-jenkins-job/[build_number]/`)
 
-    You can also chech these screenshots within the allure-report that is created on Jenkins
+    You can also chech these screenshots within the allure-report.
     
     GitHub Actions stores these images at each builds `Artifacts` section as a downloadable asset (e.g. `https://github.com/AnikoBorosova/Test-Automation/actions/runs/[build_number]`)
 
