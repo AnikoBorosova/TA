@@ -1,0 +1,58 @@
+{
+  "uid" : "35a94ffc45c78300",
+  "name" : "\"before all\" hook",
+  "fullName" : "Test for registration process.\"before all\" hook",
+  "historyId" : "4dedeed781ee94e9aaf5b20aed7ef6fa",
+  "time" : {
+    "start" : 1642403353452,
+    "stop" : 1642403356060,
+    "duration" : 2608
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Test for registration process"
+  }, {
+    "name" : "testClass",
+    "value" : "Test for registration process"
+  }, {
+    "name" : "testMethod",
+    "value" : "\"before all\" hook"
+  }, {
+    "name" : "package",
+    "value" : "Test for registration process"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-97.0.4692.71"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "35a94ffc45c78300.json",
+  "parameterValues" : [ "chrome-97.0.4692.71" ]
+}

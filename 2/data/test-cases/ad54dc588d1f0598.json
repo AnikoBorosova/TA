@@ -1,0 +1,58 @@
+{
+  "uid" : "ad54dc588d1f0598",
+  "name" : "creates account and check if it proceeds to registration form",
+  "fullName" : "Test for registration process: successful registration.creates account and check if it proceeds to registration form",
+  "historyId" : "549c9f3c93fcbd69aaf7e806566dced1",
+  "time" : {
+    "start" : 1642403358215,
+    "stop" : 1642403360616,
+    "duration" : 2401
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Test for registration process: successful registration"
+  }, {
+    "name" : "testClass",
+    "value" : "Test for registration process: successful registration"
+  }, {
+    "name" : "testMethod",
+    "value" : "creates account and check if it proceeds to registration form"
+  }, {
+    "name" : "package",
+    "value" : "Test for registration process: successful registration"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-97.0.4692.71"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ad54dc588d1f0598.json",
+  "parameterValues" : [ "chrome-97.0.4692.71" ]
+}

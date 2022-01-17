@@ -1,0 +1,58 @@
+{
+  "uid" : "9036ae3e4764ace2",
+  "name" : "adds incorrect data (password) and validates that the login was unsuccessful",
+  "fullName" : "Test for login process: unsuccessful login - incorrect password.adds incorrect data (password) and validates that the login was unsuccessful",
+  "historyId" : "e0be0fa19f0f97ce6cf1e4dc131d7b35",
+  "time" : {
+    "start" : 1642403420451,
+    "stop" : 1642403422507,
+    "duration" : 2056
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "1-1"
+  }, {
+    "name" : "suite",
+    "value" : "Test for login process: unsuccessful login - incorrect password"
+  }, {
+    "name" : "testClass",
+    "value" : "Test for login process: unsuccessful login - incorrect password"
+  }, {
+    "name" : "testMethod",
+    "value" : "adds incorrect data (password) and validates that the login was unsuccessful"
+  }, {
+    "name" : "package",
+    "value" : "Test for login process: unsuccessful login - incorrect password"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "firefox-95.0.1"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "9036ae3e4764ace2.json",
+  "parameterValues" : [ "firefox-95.0.1" ]
+}

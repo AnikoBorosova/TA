@@ -1,0 +1,10 @@
+[ {
+  "name" : "GitHub Actions",
+  "type" : "github",
+  "url" : "https://AnikoBorosova.github.io/wdio_with_selenium_standalone",
+  "buildOrder" : 2,
+  "buildName" : "GitHub Actions Run #1706701220",
+  "buildUrl" : "https://github.com/AnikoBorosova/wdio_with_selenium_standalone/actions/runs/1706701220",
+  "reportName" : "Allure Report with history",
+  "reportUrl" : "https://AnikoBorosova.github.io/wdio_with_selenium_standalone/2/"
+} ]

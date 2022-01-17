@@ -1,0 +1,58 @@
+{
+  "uid" : "713fff66322d0b1b",
+  "name" : "doesn't add any data and validates that the login was unsuccessful",
+  "fullName" : "Test for login process: unsuccessful login - no data.doesn't add any data and validates that the login was unsuccessful",
+  "historyId" : "d02d9bb0ecf3b4e7ee1b422a4ee599d2",
+  "time" : {
+    "start" : 1642403417094,
+    "stop" : 1642403418718,
+    "duration" : 1624
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "1-1"
+  }, {
+    "name" : "suite",
+    "value" : "Test for login process: unsuccessful login - no data"
+  }, {
+    "name" : "testClass",
+    "value" : "Test for login process: unsuccessful login - no data"
+  }, {
+    "name" : "testMethod",
+    "value" : "doesn't add any data and validates that the login was unsuccessful"
+  }, {
+    "name" : "package",
+    "value" : "Test for login process: unsuccessful login - no data"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "firefox-95.0.1"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "713fff66322d0b1b.json",
+  "parameterValues" : [ "firefox-95.0.1" ]
+}

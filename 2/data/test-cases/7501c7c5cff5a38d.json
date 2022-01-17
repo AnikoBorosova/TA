@@ -1,0 +1,58 @@
+{
+  "uid" : "7501c7c5cff5a38d",
+  "name" : "adds incorrect data (email) and validates that the login was unsuccessful",
+  "fullName" : "Test for login process: unsuccessful login - incorrect email address.adds incorrect data (email) and validates that the login was unsuccessful",
+  "historyId" : "cc4f3d68429ecfce0cb62cfe878ad11",
+  "time" : {
+    "start" : 1642403418728,
+    "stop" : 1642403420449,
+    "duration" : 1721
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "1-1"
+  }, {
+    "name" : "suite",
+    "value" : "Test for login process: unsuccessful login - incorrect email address"
+  }, {
+    "name" : "testClass",
+    "value" : "Test for login process: unsuccessful login - incorrect email address"
+  }, {
+    "name" : "testMethod",
+    "value" : "adds incorrect data (email) and validates that the login was unsuccessful"
+  }, {
+    "name" : "package",
+    "value" : "Test for login process: unsuccessful login - incorrect email address"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "firefox-95.0.1"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "7501c7c5cff5a38d.json",
+  "parameterValues" : [ "firefox-95.0.1" ]
+}

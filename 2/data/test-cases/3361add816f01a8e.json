@@ -1,0 +1,58 @@
+{
+  "uid" : "3361add816f01a8e",
+  "name" : "adds correct registration data and validates that the registration was successful",
+  "fullName" : "Test for registration process: successful registration.adds correct registration data and validates that the registration was successful",
+  "historyId" : "4908ff242985fafec890bb0ad9b03cb9",
+  "time" : {
+    "start" : 1642403360617,
+    "stop" : 1642403365042,
+    "duration" : 4425
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Test for registration process: successful registration"
+  }, {
+    "name" : "testClass",
+    "value" : "Test for registration process: successful registration"
+  }, {
+    "name" : "testMethod",
+    "value" : "adds correct registration data and validates that the registration was successful"
+  }, {
+    "name" : "package",
+    "value" : "Test for registration process: successful registration"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-97.0.4692.71"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "3361add816f01a8e.json",
+  "parameterValues" : [ "chrome-97.0.4692.71" ]
+}

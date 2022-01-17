@@ -1,0 +1,58 @@
+{
+  "uid" : "c083dd51a968bce7",
+  "name" : "logs in with correct data and validates that the process was successful",
+  "fullName" : "Test for login process: successful login.logs in with correct data and validates that the process was successful",
+  "historyId" : "10961aaf2c45b3572400137317117107",
+  "time" : {
+    "start" : 1642403399627,
+    "stop" : 1642403406725,
+    "duration" : 7098
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-1"
+  }, {
+    "name" : "suite",
+    "value" : "Test for login process: successful login"
+  }, {
+    "name" : "testClass",
+    "value" : "Test for login process: successful login"
+  }, {
+    "name" : "testMethod",
+    "value" : "logs in with correct data and validates that the process was successful"
+  }, {
+    "name" : "package",
+    "value" : "Test for login process: successful login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-97.0.4692.71"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c083dd51a968bce7.json",
+  "parameterValues" : [ "chrome-97.0.4692.71" ]
+}

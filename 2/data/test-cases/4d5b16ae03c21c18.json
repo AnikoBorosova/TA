@@ -1,0 +1,58 @@
+{
+  "uid" : "4d5b16ae03c21c18",
+  "name" : "\"before all\" hook",
+  "fullName" : "Test for login process.\"before all\" hook",
+  "historyId" : "9ad2aa614fd98b1fb68e61afa32bc29d",
+  "time" : {
+    "start" : 1642403410280,
+    "stop" : 1642403413602,
+    "duration" : 3322
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "1-1"
+  }, {
+    "name" : "suite",
+    "value" : "Test for login process"
+  }, {
+    "name" : "testClass",
+    "value" : "Test for login process"
+  }, {
+    "name" : "testMethod",
+    "value" : "\"before all\" hook"
+  }, {
+    "name" : "package",
+    "value" : "Test for login process"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "firefox-95.0.1"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4d5b16ae03c21c18.json",
+  "parameterValues" : [ "firefox-95.0.1" ]
+}
