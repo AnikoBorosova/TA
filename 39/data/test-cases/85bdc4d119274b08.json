@@ -1,0 +1,58 @@
+{
+  "uid" : "85bdc4d119274b08",
+  "name" : "proceeds to 'Cart summary' page and validates the chosen item in cart",
+  "fullName" : "Test for basic item purchase process.proceeds to 'Cart summary' page and validates the chosen item in cart",
+  "historyId" : "6cbbf8c3ebc1e2c9cb68ee26c1855cda",
+  "time" : {
+    "start" : 1643968537473,
+    "stop" : 1643968547400,
+    "duration" : 9927
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-2"
+  }, {
+    "name" : "suite",
+    "value" : "Test for basic item purchase process"
+  }, {
+    "name" : "testClass",
+    "value" : "Test for basic item purchase process"
+  }, {
+    "name" : "testMethod",
+    "value" : "proceeds to 'Cart summary' page and validates the chosen item in cart"
+  }, {
+    "name" : "package",
+    "value" : "Test for basic item purchase process"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-97.0.4692.99"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "85bdc4d119274b08.json",
+  "parameterValues" : [ "chrome-97.0.4692.99" ]
+}

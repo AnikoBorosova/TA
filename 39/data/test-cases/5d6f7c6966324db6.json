@@ -1,0 +1,58 @@
+{
+  "uid" : "5d6f7c6966324db6",
+  "name" : "adds incorrect data (email) and validates that the login was unsuccessful",
+  "fullName" : "Test for login process: unsuccessful login - incorrect email address.adds incorrect data (email) and validates that the login was unsuccessful",
+  "historyId" : "66feb280a092f45da1e1bd35fc182399",
+  "time" : {
+    "start" : 1643968450377,
+    "stop" : 1643968459110,
+    "duration" : 8733
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-1"
+  }, {
+    "name" : "suite",
+    "value" : "Test for login process: unsuccessful login - incorrect email address"
+  }, {
+    "name" : "testClass",
+    "value" : "Test for login process: unsuccessful login - incorrect email address"
+  }, {
+    "name" : "testMethod",
+    "value" : "adds incorrect data (email) and validates that the login was unsuccessful"
+  }, {
+    "name" : "package",
+    "value" : "Test for login process: unsuccessful login - incorrect email address"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-97.0.4692.99"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5d6f7c6966324db6.json",
+  "parameterValues" : [ "chrome-97.0.4692.99" ]
+}

@@ -1,0 +1,58 @@
+{
+  "uid" : "f4f8aafa26eca914",
+  "name" : "Logs in with credentials and proceeds to 'Addresses' page",
+  "fullName" : "Test for basic item purchase process.Logs in with credentials and proceeds to 'Addresses' page",
+  "historyId" : "6c0d46a812f3afd045cb76137b7e157b",
+  "time" : {
+    "start" : 1643968547401,
+    "stop" : 1643968578945,
+    "duration" : 31544
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-2"
+  }, {
+    "name" : "suite",
+    "value" : "Test for basic item purchase process"
+  }, {
+    "name" : "testClass",
+    "value" : "Test for basic item purchase process"
+  }, {
+    "name" : "testMethod",
+    "value" : "Logs in with credentials and proceeds to 'Addresses' page"
+  }, {
+    "name" : "package",
+    "value" : "Test for basic item purchase process"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-97.0.4692.99"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f4f8aafa26eca914.json",
+  "parameterValues" : [ "chrome-97.0.4692.99" ]
+}

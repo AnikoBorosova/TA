@@ -1,0 +1,311 @@
+[ {
+  "uid" : "20fcb5b67c473da",
+  "name" : "creates account and check if it proceeds to registration form",
+  "time" : {
+    "start" : 1643968451761,
+    "stop" : 1643968460177,
+    "duration" : 8416
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e708f0aa5c340436",
+  "name" : "proceeds to payment, chooses payment method and proceeds to 'Order summary' page",
+  "time" : {
+    "start" : 1643968586464,
+    "stop" : 1643968595182,
+    "duration" : 8718
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a3e10519dd50de60",
+  "name" : "doesn't add any data and validates that the login was unsuccessful",
+  "time" : {
+    "start" : 1643968444648,
+    "stop" : 1643968450371,
+    "duration" : 5723
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f4f8aafa26eca914",
+  "name" : "Logs in with credentials and proceeds to 'Addresses' page",
+  "time" : {
+    "start" : 1643968547401,
+    "stop" : 1643968578945,
+    "duration" : 31544
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6f530eaeab86a390",
+  "name" : "\"before all\" hook",
+  "time" : {
+    "start" : 1643968518939,
+    "stop" : 1643968527796,
+    "duration" : 8857
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3091f2b8e76b69b7",
+  "name" : "navigates to 'Sign in'page and checks if it opens",
+  "time" : {
+    "start" : 1643968487073,
+    "stop" : 1643968498516,
+    "duration" : 11443
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "82a93e93ab0b0fb0",
+  "name" : "logs in with correct data and validates that the process was successful",
+  "time" : {
+    "start" : 1643968522239,
+    "stop" : 1643968522599,
+    "duration" : 360
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ad4f46adbbe5ccd6",
+  "name" : "creates account and check if it proceeds to registration form",
+  "time" : {
+    "start" : 1643968486001,
+    "stop" : 1643968494892,
+    "duration" : 8891
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "73e6f4a7d26e3679",
+  "name" : "adds incorrect data (password) and validates that the login was unsuccessful",
+  "time" : {
+    "start" : 1643968459113,
+    "stop" : 1643968463094,
+    "duration" : 3981
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "15d82b174e80a3b6",
+  "name" : "Logs in with credentials and proceeds to 'Addresses' page",
+  "time" : {
+    "start" : 1643968556362,
+    "stop" : 1643968571720,
+    "duration" : 15358
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "292881a9457828",
+  "name" : "adds an item to the cart and checks if it was successful",
+  "time" : {
+    "start" : 1643968537844,
+    "stop" : 1643968546020,
+    "duration" : 8176
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5d6f7c6966324db6",
+  "name" : "adds incorrect data (email) and validates that the login was unsuccessful",
+  "time" : {
+    "start" : 1643968450377,
+    "stop" : 1643968459110,
+    "duration" : 8733
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ea60a8850f50b3a7",
+  "name" : "proceeds to 'Shipping' page and checks page headline",
+  "time" : {
+    "start" : 1643968578946,
+    "stop" : 1643968586463,
+    "duration" : 7517
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1d87af0cd26c854",
+  "name" : "confirms order and checks 'Confirmation' page headline",
+  "time" : {
+    "start" : 1643968595182,
+    "stop" : 1643968611283,
+    "duration" : 16101
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1abb76812b11821f",
+  "name" : "\"before all\" hook",
+  "time" : {
+    "start" : 1643968525548,
+    "stop" : 1643968537843,
+    "duration" : 12295
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ce11f1d021daf48c",
+  "name" : "navigates to 'Sign in'page and checks if it opens",
+  "time" : {
+    "start" : 1643968441279,
+    "stop" : 1643968451759,
+    "duration" : 10480
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "770b79a3eae3bbe1",
+  "name" : "\"before all\" hook",
+  "time" : {
+    "start" : 1643968480657,
+    "stop" : 1643968487069,
+    "duration" : 6412
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "85bdc4d119274b08",
+  "name" : "proceeds to 'Cart summary' page and validates the chosen item in cart",
+  "time" : {
+    "start" : 1643968537473,
+    "stop" : 1643968547400,
+    "duration" : 9927
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2f3bfa8b6483e3ef",
+  "name" : "\"before all\" hook",
+  "time" : {
+    "start" : 1643968425373,
+    "stop" : 1643968433132,
+    "duration" : 7759
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4a7ca518a623d6c4",
+  "name" : "\"before all\" hook",
+  "time" : {
+    "start" : 1643968468974,
+    "stop" : 1643968475679,
+    "duration" : 6705
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ebfe8f0160ac3993",
+  "name" : "logs in with correct data and validates that the process was successful",
+  "time" : {
+    "start" : 1643968463097,
+    "stop" : 1643968473992,
+    "duration" : 10895
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8165d9b76ea5e1c8",
+  "name" : "navigates to 'Sign in'page and checks if it opens",
+  "time" : {
+    "start" : 1643968475680,
+    "stop" : 1643968486000,
+    "duration" : 10320
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f70e76435fe3e0e3",
+  "name" : "adds incorrect data (password) and validates that the login was unsuccessful",
+  "time" : {
+    "start" : 1643968516769,
+    "stop" : 1643968522236,
+    "duration" : 5467
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5dad7cc82030fab7",
+  "name" : "\"before all\" hook",
+  "time" : {
+    "start" : 1643968431301,
+    "stop" : 1643968441277,
+    "duration" : 9976
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a072e9a9fac09f4e",
+  "name" : "adds incorrect data (email) and validates that the login was unsuccessful",
+  "time" : {
+    "start" : 1643968508810,
+    "stop" : 1643968516767,
+    "duration" : 7957
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ed8438d971cb6b0b",
+  "name" : "proceeds to 'Cart summary' page and validates the chosen item in cart",
+  "time" : {
+    "start" : 1643968546021,
+    "stop" : 1643968556361,
+    "duration" : 10340
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a75f97ff59835fbb",
+  "name" : "adds correct registration data and validates that the registration was successful",
+  "time" : {
+    "start" : 1643968460178,
+    "stop" : 1643968466465,
+    "duration" : 6287
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f9286517abc28c2a",
+  "name" : "adds an item to the cart and checks if it was successful",
+  "time" : {
+    "start" : 1643968527797,
+    "stop" : 1643968537472,
+    "duration" : 9675
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b291ee36eb925004",
+  "name" : "doesn't add any data and validates that the login was unsuccessful",
+  "time" : {
+    "start" : 1643968498516,
+    "stop" : 1643968508803,
+    "duration" : 10287
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ad170c337a938e91",
+  "name" : "navigates to 'Sign in'page and checks if it opens",
+  "time" : {
+    "start" : 1643968433133,
+    "stop" : 1643968444648,
+    "duration" : 11515
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d564fed054962589",
+  "name" : "adds correct registration data and validates that the registration was successful",
+  "time" : {
+    "start" : 1643968494893,
+    "stop" : 1643968515688,
+    "duration" : 20795
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

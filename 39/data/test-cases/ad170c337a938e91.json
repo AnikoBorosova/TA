@@ -1,0 +1,58 @@
+{
+  "uid" : "ad170c337a938e91",
+  "name" : "navigates to 'Sign in'page and checks if it opens",
+  "fullName" : "Test for login process: unsuccessful login - no data.navigates to 'Sign in'page and checks if it opens",
+  "historyId" : "ddd5f2f49ead7e0a2d50731893cd1a3e",
+  "time" : {
+    "start" : 1643968433133,
+    "stop" : 1643968444648,
+    "duration" : 11515
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-1"
+  }, {
+    "name" : "suite",
+    "value" : "Test for login process: unsuccessful login - no data"
+  }, {
+    "name" : "testClass",
+    "value" : "Test for login process: unsuccessful login - no data"
+  }, {
+    "name" : "testMethod",
+    "value" : "navigates to 'Sign in'page and checks if it opens"
+  }, {
+    "name" : "package",
+    "value" : "Test for login process: unsuccessful login - no data"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-97.0.4692.99"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ad170c337a938e91.json",
+  "parameterValues" : [ "chrome-97.0.4692.99" ]
+}

@@ -1,0 +1,82 @@
+{
+  "uid" : "15d82b174e80a3b6",
+  "name" : "Logs in with credentials and proceeds to 'Addresses' page",
+  "fullName" : "Test for basic item purchase process.Logs in with credentials and proceeds to 'Addresses' page",
+  "historyId" : "a4a9eab22bb8dfd3448d07c40a777985",
+  "time" : {
+    "start" : 1643968556362,
+    "stop" : 1643968571720,
+    "duration" : 15358
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "Error: element (\"//li[contains(@class, 'step_current')]//*[contains(text(), 'Sign in')]\") still not existing after 10000ms",
+  "statusTrace" : "Error: element (\"//li[contains(@class, 'step_current')]//*[contains(text(), 'Sign in')]\") still not existing after 10000ms\n                    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n                    at PurchasePage.doProceedToSignIn (/home/runner/work/wdio_with_selenium_standalone/wdio_with_selenium_standalone/tests/pageObjects/Purchase.page.js:89:31)\n                    at UserContext.<anonymous> (/home/runner/work/wdio_with_selenium_standalone/wdio_with_selenium_standalone/tests/specs/purchase.js:29:16)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "Error: element (\"//li[contains(@class, 'step_current')]//*[contains(text(), 'Sign in')]\") still not existing after 10000ms",
+    "statusTrace" : "Error: element (\"//li[contains(@class, 'step_current')]//*[contains(text(), 'Sign in')]\") still not existing after 10000ms\n                    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n                    at PurchasePage.doProceedToSignIn (/home/runner/work/wdio_with_selenium_standalone/wdio_with_selenium_standalone/tests/pageObjects/Purchase.page.js:89:31)\n                    at UserContext.<anonymous> (/home/runner/work/wdio_with_selenium_standalone/wdio_with_selenium_standalone/tests/specs/purchase.js:29:16)",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "c2580c6dd984419d",
+      "name" : "Screenshot",
+      "source" : "c2580c6dd984419d.png",
+      "type" : "image/png",
+      "size" : 92600
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "1-2"
+  }, {
+    "name" : "suite",
+    "value" : "Test for basic item purchase process"
+  }, {
+    "name" : "testClass",
+    "value" : "Test for basic item purchase process"
+  }, {
+    "name" : "testMethod",
+    "value" : "Logs in with credentials and proceeds to 'Addresses' page"
+  }, {
+    "name" : "package",
+    "value" : "Test for basic item purchase process"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "firefox-96.0"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "15d82b174e80a3b6.json",
+  "parameterValues" : [ "firefox-96.0" ]
+}

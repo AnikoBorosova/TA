@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "Error: element (\"//li[contains(@class, 'step_current')]//*[contains(text(), 'Sign in')]\") still not existing after 10000ms",
+      "children" : [ {
+        "name" : "Logs in with credentials and proceeds to 'Addresses' page",
+        "uid" : "15d82b174e80a3b6",
+        "parentUid" : "d046a06465cf727d869a7a0aed979903",
+        "status" : "failed",
+        "time" : {
+          "start" : 1643968556362,
+          "stop" : 1643968571720,
+          "duration" : 15358
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "firefox-96.0" ]
+      } ],
+      "uid" : "d046a06465cf727d869a7a0aed979903"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
+  "name" : "categories"
+}

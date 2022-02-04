@@ -1,0 +1,58 @@
+{
+  "uid" : "a75f97ff59835fbb",
+  "name" : "adds correct registration data and validates that the registration was successful",
+  "fullName" : "Test for registration process: successful registration.adds correct registration data and validates that the registration was successful",
+  "historyId" : "78c607e1e9add8591a5a48b9aa06550f",
+  "time" : {
+    "start" : 1643968460178,
+    "stop" : 1643968466465,
+    "duration" : 6287
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "1-0"
+  }, {
+    "name" : "suite",
+    "value" : "Test for registration process: successful registration"
+  }, {
+    "name" : "testClass",
+    "value" : "Test for registration process: successful registration"
+  }, {
+    "name" : "testMethod",
+    "value" : "adds correct registration data and validates that the registration was successful"
+  }, {
+    "name" : "package",
+    "value" : "Test for registration process: successful registration"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "firefox-96.0"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a75f97ff59835fbb.json",
+  "parameterValues" : [ "firefox-96.0" ]
+}

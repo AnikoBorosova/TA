@@ -1,0 +1,58 @@
+{
+  "uid" : "ea60a8850f50b3a7",
+  "name" : "proceeds to 'Shipping' page and checks page headline",
+  "fullName" : "Test for basic item purchase process.proceeds to 'Shipping' page and checks page headline",
+  "historyId" : "8adfaa2f0d3772a47562c24f27d24d82",
+  "time" : {
+    "start" : 1643968578946,
+    "stop" : 1643968586463,
+    "duration" : 7517
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-2"
+  }, {
+    "name" : "suite",
+    "value" : "Test for basic item purchase process"
+  }, {
+    "name" : "testClass",
+    "value" : "Test for basic item purchase process"
+  }, {
+    "name" : "testMethod",
+    "value" : "proceeds to 'Shipping' page and checks page headline"
+  }, {
+    "name" : "package",
+    "value" : "Test for basic item purchase process"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-97.0.4692.99"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ea60a8850f50b3a7.json",
+  "parameterValues" : [ "chrome-97.0.4692.99" ]
+}

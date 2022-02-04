@@ -1,0 +1,58 @@
+{
+  "uid" : "2f3bfa8b6483e3ef",
+  "name" : "\"before all\" hook",
+  "fullName" : "Test for login process.\"before all\" hook",
+  "historyId" : "2b151de4fc19d9d1ef9f0c008a78e8fd",
+  "time" : {
+    "start" : 1643968425373,
+    "stop" : 1643968433132,
+    "duration" : 7759
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-1"
+  }, {
+    "name" : "suite",
+    "value" : "Test for login process"
+  }, {
+    "name" : "testClass",
+    "value" : "Test for login process"
+  }, {
+    "name" : "testMethod",
+    "value" : "\"before all\" hook"
+  }, {
+    "name" : "package",
+    "value" : "Test for login process"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-97.0.4692.99"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "2f3bfa8b6483e3ef.json",
+  "parameterValues" : [ "chrome-97.0.4692.99" ]
+}

@@ -1,0 +1,58 @@
+{
+  "uid" : "8165d9b76ea5e1c8",
+  "name" : "navigates to 'Sign in'page and checks if it opens",
+  "fullName" : "Test for registration process: successful registration.navigates to 'Sign in'page and checks if it opens",
+  "historyId" : "cea3b868ba99aea9c79349127a17a928",
+  "time" : {
+    "start" : 1643968475680,
+    "stop" : 1643968486000,
+    "duration" : 10320
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Test for registration process: successful registration"
+  }, {
+    "name" : "testClass",
+    "value" : "Test for registration process: successful registration"
+  }, {
+    "name" : "testMethod",
+    "value" : "navigates to 'Sign in'page and checks if it opens"
+  }, {
+    "name" : "package",
+    "value" : "Test for registration process: successful registration"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-97.0.4692.99"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "8165d9b76ea5e1c8.json",
+  "parameterValues" : [ "chrome-97.0.4692.99" ]
+}
