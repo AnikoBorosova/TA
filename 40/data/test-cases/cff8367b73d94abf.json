@@ -1,0 +1,78 @@
+{
+  "uid" : "cff8367b73d94abf",
+  "name" : "adds an item to the cart and checks if it was successful",
+  "fullName" : "Test for basic item purchase process.adds an item to the cart and checks if it was successful",
+  "historyId" : "b52a5bbb79adc08ba262b547a22a1c85",
+  "time" : {
+    "start" : 1645381459710,
+    "stop" : 1645381460928,
+    "duration" : 1218
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "1-2"
+  }, {
+    "name" : "suite",
+    "value" : "Test for basic item purchase process"
+  }, {
+    "name" : "testClass",
+    "value" : "Test for basic item purchase process"
+  }, {
+    "name" : "testMethod",
+    "value" : "adds an item to the cart and checks if it was successful"
+  }, {
+    "name" : "package",
+    "value" : "Test for basic item purchase process"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "firefox-96.0"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "292881a9457828",
+        "reportUrl" : "https://AnikoBorosova.github.io/wdio_with_selenium_standalone/39//#testresult/292881a9457828",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643968537844,
+          "stop" : 1643968546020,
+          "duration" : 8176
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "cff8367b73d94abf.json",
+  "parameterValues" : [ "firefox-96.0" ]
+}

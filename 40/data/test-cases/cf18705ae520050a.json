@@ -1,0 +1,78 @@
+{
+  "uid" : "cf18705ae520050a",
+  "name" : "adds incorrect data (password) and validates that the login was unsuccessful",
+  "fullName" : "Test for login process: unsuccessful login - incorrect password.adds incorrect data (password) and validates that the login was unsuccessful",
+  "historyId" : "6794db3ad813307bf7fec32bb1c0b766",
+  "time" : {
+    "start" : 1645381457028,
+    "stop" : 1645381459274,
+    "duration" : 2246
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "1-1"
+  }, {
+    "name" : "suite",
+    "value" : "Test for login process: unsuccessful login - incorrect password"
+  }, {
+    "name" : "testClass",
+    "value" : "Test for login process: unsuccessful login - incorrect password"
+  }, {
+    "name" : "testMethod",
+    "value" : "adds incorrect data (password) and validates that the login was unsuccessful"
+  }, {
+    "name" : "package",
+    "value" : "Test for login process: unsuccessful login - incorrect password"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "firefox-96.0"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "f70e76435fe3e0e3",
+        "reportUrl" : "https://AnikoBorosova.github.io/wdio_with_selenium_standalone/39//#testresult/f70e76435fe3e0e3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643968516769,
+          "stop" : 1643968522236,
+          "duration" : 5467
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "cf18705ae520050a.json",
+  "parameterValues" : [ "firefox-96.0" ]
+}

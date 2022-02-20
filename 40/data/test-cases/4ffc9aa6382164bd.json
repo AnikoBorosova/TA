@@ -1,0 +1,78 @@
+{
+  "uid" : "4ffc9aa6382164bd",
+  "name" : "navigates to 'Sign in'page and checks if it opens",
+  "fullName" : "Test for registration process: successful registration.navigates to 'Sign in'page and checks if it opens",
+  "historyId" : "42933d84afc698ae492ef367b26e96c6",
+  "time" : {
+    "start" : 1645381436726,
+    "stop" : 1645381438506,
+    "duration" : 1780
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "1-0"
+  }, {
+    "name" : "suite",
+    "value" : "Test for registration process: successful registration"
+  }, {
+    "name" : "testClass",
+    "value" : "Test for registration process: successful registration"
+  }, {
+    "name" : "testMethod",
+    "value" : "navigates to 'Sign in'page and checks if it opens"
+  }, {
+    "name" : "package",
+    "value" : "Test for registration process: successful registration"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "firefox-96.0"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "ce11f1d021daf48c",
+        "reportUrl" : "https://AnikoBorosova.github.io/wdio_with_selenium_standalone/39//#testresult/ce11f1d021daf48c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643968441279,
+          "stop" : 1643968451759,
+          "duration" : 10480
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "4ffc9aa6382164bd.json",
+  "parameterValues" : [ "firefox-96.0" ]
+}

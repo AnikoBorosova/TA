@@ -1,0 +1,79 @@
+{
+  "uid" : "4a34c1cd17b206c",
+  "name" : "Logs in with credentials and proceeds to 'Addresses' page",
+  "fullName" : "Test for basic item purchase process.Logs in with credentials and proceeds to 'Addresses' page",
+  "historyId" : "a4a9eab22bb8dfd3448d07c40a777985",
+  "time" : {
+    "start" : 1645381461971,
+    "stop" : 1645381465771,
+    "duration" : 3800
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "1-2"
+  }, {
+    "name" : "suite",
+    "value" : "Test for basic item purchase process"
+  }, {
+    "name" : "testClass",
+    "value" : "Test for basic item purchase process"
+  }, {
+    "name" : "testMethod",
+    "value" : "Logs in with credentials and proceeds to 'Addresses' page"
+  }, {
+    "name" : "package",
+    "value" : "Test for basic item purchase process"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "firefox-96.0"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 1,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 1,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "15d82b174e80a3b6",
+        "reportUrl" : "https://AnikoBorosova.github.io/wdio_with_selenium_standalone/39//#testresult/15d82b174e80a3b6",
+        "status" : "failed",
+        "statusDetails" : "Error: element (\"//li[contains(@class, 'step_current')]//*[contains(text(), 'Sign in')]\") still not existing after 10000ms",
+        "time" : {
+          "start" : 1643968556362,
+          "stop" : 1643968571720,
+          "duration" : 15358
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "4a34c1cd17b206c.json",
+  "parameterValues" : [ "firefox-96.0" ]
+}

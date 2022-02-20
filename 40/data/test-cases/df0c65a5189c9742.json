@@ -1,0 +1,78 @@
+{
+  "uid" : "df0c65a5189c9742",
+  "name" : "logs in with correct data and validates that the process was successful",
+  "fullName" : "Test for login process: successful login.logs in with correct data and validates that the process was successful",
+  "historyId" : "543be717357cade31003d2c4045839ee",
+  "time" : {
+    "start" : 1645381459278,
+    "stop" : 1645381461221,
+    "duration" : 1943
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "1-1"
+  }, {
+    "name" : "suite",
+    "value" : "Test for login process: successful login"
+  }, {
+    "name" : "testClass",
+    "value" : "Test for login process: successful login"
+  }, {
+    "name" : "testMethod",
+    "value" : "logs in with correct data and validates that the process was successful"
+  }, {
+    "name" : "package",
+    "value" : "Test for login process: successful login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "firefox-96.0"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "82a93e93ab0b0fb0",
+        "reportUrl" : "https://AnikoBorosova.github.io/wdio_with_selenium_standalone/39//#testresult/82a93e93ab0b0fb0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643968522239,
+          "stop" : 1643968522599,
+          "duration" : 360
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "df0c65a5189c9742.json",
+  "parameterValues" : [ "firefox-96.0" ]
+}

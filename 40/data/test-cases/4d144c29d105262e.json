@@ -1,0 +1,58 @@
+{
+  "uid" : "4d144c29d105262e",
+  "name" : "confirms order and checks 'Confirmation' page headline",
+  "fullName" : "Test for basic item purchase process.confirms order and checks 'Confirmation' page headline",
+  "historyId" : "bd7d00e8b192075308f5699361e9ae2a",
+  "time" : {
+    "start" : 1645381469704,
+    "stop" : 1645381471927,
+    "duration" : 2223
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "1-2"
+  }, {
+    "name" : "suite",
+    "value" : "Test for basic item purchase process"
+  }, {
+    "name" : "testClass",
+    "value" : "Test for basic item purchase process"
+  }, {
+    "name" : "testMethod",
+    "value" : "confirms order and checks 'Confirmation' page headline"
+  }, {
+    "name" : "package",
+    "value" : "Test for basic item purchase process"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "firefox-96.0"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4d144c29d105262e.json",
+  "parameterValues" : [ "firefox-96.0" ]
+}
