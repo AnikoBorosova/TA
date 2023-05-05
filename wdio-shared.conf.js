@@ -28,7 +28,7 @@ module.exports = {
 		'./tests/specs/login.js',
 		'./tests/specs/purchase.js'
 		*/
-		'.tests2/specs/*.js'
+		'./tests2/specs/*.js'
 	],
 	// Patterns to exclude.
 	exclude: [
