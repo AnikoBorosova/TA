@@ -31,7 +31,6 @@ jobs:
         run: node prepareConfig.js && ./node_modules/.bin/wdio ./wdio-github-macOS.conf.js
       - name: Screenshot handling
         uses: actions/upload-artifact@v1
-        if: failure()
         with:
           name: wdio-error-screenshots
-          path: errorScreenshots
+          path: screenshots
