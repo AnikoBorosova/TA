@@ -1,4 +1,5 @@
 const saveScreenshotHelper = require("./utils/saveScreenshotHelper");
+const saveShotHelper = require("./utils/saveShotHelper");
 
 module.exports = {
 	//
@@ -176,6 +177,57 @@ module.exports = {
 			saveScreenshotHelper(error);
 		//}
 	},
+	afterTest: function (test, context, { result, duration, passed, retries }) {
+		saveShotHelper();
+	},
+	/*
+	afterStep: async function (step, scenario, result, context) {
+		if (result.passed) {
+		  // Output passing steps (green check + step text)
+		  console.info(
+			'\t  \x1b[34m %s ms  \t\x1b[0m \x1b[32m✔\x1b[0m %s',
+			Math.trunc(result.duration),
+			step.text,
+		  );
+		} else if (!result.passed) {
+		  const timestamp = Date.now();
+		  const scenarioNameNormalized = scenario.name
+			.replace(/[^a-zA-Z ]/g, '')
+			.replace(/([a-z])([A-Z])/g, '$1-$2')
+			.replace(/\s+/g, '-')
+			.toLowerCase()
+			.substring(0, 100);
+		  const stepNameNormalized = step.text
+			.replace(/[^a-zA-Z ]/g, '')
+			.replace(/([a-z])([A-Z])/g, '$1-$2')
+			.replace(/\s+/g, '-')
+			.toLowerCase()
+			.substring(0, 100);
+		  // Output failing steps (red cross + step text)
+		  console.info(
+			'\t  \x1b[34m %s ms  \t\x1b[0m \x1b[31m✖\x1b[0m %s',
+			Math.trunc(result.duration),
+			step.text,
+		  );
+		  // Output screenshot name and save screenshot
+		  console.info(
+			`\t\tScreenshot taken: ${scenarioNameNormalized}_${stepNameNormalized}_${timestamp}.png`,
+		  );
+		  await browser.saveScreenshot(
+			`./results/${scenarioNameNormalized}_${stepNameNormalized}_${timestamp}.png`,
+		  );
+		  // Write html snapshot to file
+		  const html = await $('html').getHTML();
+		  fs.writeFileSync(
+			`./results/${scenarioNameNormalized}_${stepNameNormalized}_${timestamp}.html`,
+			html,
+		  );
+		  if (DEBUG_MODE === true) {
+			await browser.debug();
+		  }
+		}
+	  }
+	  */
 	/*
 	after: async function () {
 		await Promise.all([
