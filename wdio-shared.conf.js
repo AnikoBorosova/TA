@@ -23,9 +23,12 @@ module.exports = {
 	// directory is where your package.json resides, so `wdio` will be called from there.
 	//
 	specs: [
+		/*
 		'./tests/specs/register.js',
 		'./tests/specs/login.js',
 		'./tests/specs/purchase.js'
+		*/
+		'.tests2/specs/*.js'
 	],
 	// Patterns to exclude.
 	exclude: [
@@ -81,7 +84,7 @@ module.exports = {
 	// with `/`, the base url gets prepended, not including the path portion of your baseUrl.
 	// If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
 	// gets prepended directly.
-	baseUrl: 'http://automationpractice.com/index.php',
+	baseUrl: '',
 	//
 	// Default timeout for all waitFor* commands.
 	waitforTimeout: 10000,
