@@ -2,7 +2,7 @@ const sharedConfig = require("./wdio-shared.conf");
 
 const drivers = {
 	chrome: {
-		version: '97.0.4692.99',
+		version: 'latest',
 		arch: process.arch,
 		baseURL: 'https://chromedriver.storage.googleapis.com'
 	},
@@ -10,7 +10,7 @@ const drivers = {
 		version: 'latest'
 	},
 	chromiumedge: {
-		version: '98.0.1108.56',
+		version: 'latest',
 		arch: process.arch,
 		acceptInsecureCerts: true,
 		baseURL: "https://msedgedriver.azureedge.net"  // from here: "https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver"
